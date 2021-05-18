@@ -1,0 +1,56 @@
+name: Generate Web Markdown
+
+on:
+  push:
+    paths:
+      - '.github/workflows/*.yml'
+      - 'model/**/*.yml'
+
+jobs:
+  lintModelv20:
+    runs-on: ubuntu-18.04
+    steps:
+    - uses: actions/checkout@v2
+    - name: yaml-lint
+      run: |
+        yamllint -c .yamllint -f github model
+
+  generate-markdown:
+    runs-on: ubuntu-18.04
+    needs: lintModelv20
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: 'Create output dir and copy files to override spaces in directories'
+        run: |
+          mkdir output
+
+      - name: 'Generate model for website'
+        uses: docker://fzipi/owasp-samm-preprocess-yaml:version-0.8.1
+        with:
+          args: '-d model -o output'
+
+      - name: 'Move generated files to common directory structure'
+        run: |
+          mkdir -p build/business-function/practice/stream
+          BASE=output/markdown
+          cp "$BASE"/{Design.md,Governance.md,Implementation.md,Operations.md,Verification.md} build/business-function
+          cp "$BASE"/*-??-?.md build/business-function/practice/stream
+          cp "$BASE"/*-??.md build/business-function/practice
+
+      - name: Inject slug/short variables
+        uses: rlespinasse/github-slug-action@v3.x
+
+      - name: Deploy
+        uses: s0/git-publish-subdir-action@develop
+        env:
+          REPO: self
+          BRANCH: markdown/${GITHUB_REF_SLUG}
+          FOLDER: build
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SQUASH_HISTORY: true
+  # after changing something, we need to trigger the website build
+  #trigger-website-build:
+  #  runs-on: ubuntu-18.04
+  #  needs: generate-markdown
+
