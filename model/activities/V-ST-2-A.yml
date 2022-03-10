@@ -16,7 +16,7 @@ id: fb6f258a2e424ee9a919341758222a7a
 title: Develop application-specific security test cases
 
 #Describe the benefit that is achieved by implementing this activity
-benefit: Detection of organization-specific easy-to-find vulnerabilites
+benefit: Detection of organization-specific easy-to-find vulnerabilities
 
 #A one sentence description of the activity
 shortDescription: Employ application-specific security testing automation
