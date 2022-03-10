@@ -19,7 +19,7 @@ title: Perform fuzz testing
 benefit: Insight into behaviour of your applications when dealing with unexpected input
 
 #A one sentence description of the activity
-shortDescription: Perform security fuzzing testing
+shortDescription: Perform security fuzzing testing.
 
 #A multi-paragraph description of the activity
 longDescription: |
