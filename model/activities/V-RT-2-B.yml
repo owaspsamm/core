@@ -19,7 +19,7 @@ title: Define and run security abuse cases from requirements
 benefit: Detection of application business logic flaws
 
 #A one sentence description of the activity
-shortDescription: Create and test abuse cases and business logic flaw test
+shortDescription: Create and test abuse cases and business logic flaw test.
 
 #A multi-paragraph description of the activity
 longDescription: |

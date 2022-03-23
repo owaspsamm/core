@@ -19,7 +19,7 @@ title: Define and run security test cases from requirements
 benefit: Integration of security requirements into test scenarios
 
 #A one sentence description of the activity
-shortDescription: Derive test cases from known security requirements
+shortDescription: Derive test cases from known security requirements.
 
 #A multi-paragraph description of the activity
 longDescription: |
