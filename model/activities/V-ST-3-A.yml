@@ -19,7 +19,7 @@ title: Integrate security testing tools in the delivery pipeline
 benefit: Identification of automatically identifiable vulnerabilities in earliest possible stages
 
 #A one sentence description of the activity
-shortDescription: Integrate automated security testing into the build and deploy process
+shortDescription: Integrate automated security testing into the build and deploy process.
 
 #A multi-paragraph description of the activity
 longDescription: |

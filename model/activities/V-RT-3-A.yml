@@ -19,7 +19,7 @@ title: Automate security requirements testing
 benefit: Timely and reliable detection of violations to security requirements
 
 #A one sentence description of the activity
-shortDescription: Perform regression testing (with security unit tests)
+shortDescription: Perform regression testing (with security unit tests).
 
 #A multi-paragraph description of the activity
 longDescription: |
