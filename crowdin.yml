@@ -1,0 +1,3 @@
+files:
+  - source: /model/**/*.yml
+    translation: /%two_letters_code%/%original_file_name%
