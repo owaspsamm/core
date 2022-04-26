@@ -1,23 +1,36 @@
 ---
 #===========================================================
-#OWASP SAMM2 Coverage Question template/sample
+#OWASP SAMM Activity Description
 #===========================================================
-#Link to the activity that this question helps measure
-activity: 9d0433c5133c4a4c9c16ae84abe9a235
-#Link to the answer set that contains the potential answers for this question
-answerset: f77bd45a28c8493dbba6e53b2eafa20f
-#Unique identifier (GUID) used to refer to this maturity level.
-#Please generate another identifier for your specific maturity level.
-id: ba213b2d5fc844a386010ca53cf87fb8
-#One-sentence description of the criterium
-text: Do you regularly review the effectiveness of the security controls?
-#Order of this question for the activity (in case there would be multiple)
-order: 1
-#Qualifying Criterion
-quality:
-  - You evaluate the preventive, detective, and response capabilities of security controls
-  - You evaluate the strategy alignment, appropriate support, and scalability of security controls
-  - You evaluate the effectiveness at least yearly
-  - You log identified shortcomings as defects
+#Link to the stream that this activity belongs to
+stream: 77ca4b5e7ebc42558109829dffc2b80d
+#Link to the practice level that this activity belongs to
+level: 83ea8aaab3384b41b785107613ee4d86
+#Unique identifier (GUID) used to refer to this activity.
+#Please generate another identifier for your specific activity.
+id: 9d0433c5133c4a4c9c16ae84abe9a235
+#The title of this activity
+title: Verify the effectiveness of security components
+#Describe the benefit that is achieved by implementing this activity
+benefit: Assurance of effectiveness of architecture controls
+#A one sentence description of the activity
+shortDescription: Review of the architecture components' effectiveness.
+#A multi-paragraph description of the activity
+longDescription: |
+  Review the effectiveness of the architecture components and their provided security mechanisms in terms of alignment with the overall strategy of the organization, and scrutinize the degree of availability, scalability and enterprise-readiness of the chosen security solutions. While tactical choices for a particular application can make sense in specific contexts, it is important to keep an eye on the bigger picture and ensure future readiness of the designed solution.
+
+  Feed any findings back into defect management to trigger further improvements to the architecture.
+#The output of this particular activity
+results:
+#The different metrics that can be used to measure the success of the activity
+metrics:
+#A description of the costs required to implement the activity
+costs:
+#The (standard) roles involved in the implementation of this activity
+personnel:
+#Internal notes that might help the author
+notes:
+#References to other activities that are prerequesites to implement this one.
+dependencies:
 #Type Classification of the Document
-type: Question
+type: Activity
