@@ -1,41 +1,23 @@
 ---
 #===========================================================
-#OWASP SAMM Activity Description
+#OWASP SAMM2 Coverage Question template/sample
 #===========================================================
-#Link to the stream that this activity belongs to
-stream: 77ca4b5e7ebc42558109829dffc2b80d
-#Link to the practice level that this activity belongs to
-level: 39bc5d271fae4ea8ba53db7de7b2712c
-#Unique identifier (GUID) used to refer to this activity.
-#Please generate another identifier for your specific activity.
-id: 0f611af10f974da497e7f3defe0c4f12
-#The title of this activity
-title: Assess application architecture
-#Describe the benefit that is achieved by implementing this activity
-benefit: Understanding of high-level architecture and sensible security measures
-#A one sentence description of the activity
-shortDescription: Identify application and infrastructure architecture components and review for basic security provisioning.
-#A multi-paragraph description of the activity
-longDescription: |
-  Create a view of the overall architecture and examine it for the correct provision of general security mechanisms such as authentication, authorization, user and rights management, secure communication, data protection, key management and log management. Also consider the support for privacy. Do this based on project artifacts such as architecture or design documents, or interviews with business owners and technical staff. Also consider the infrastructure components - these are all the systems, components and libraries (including SDKs) that are not specific to the application, but provide direct support to use or manage the application(s) in the organisation.
-
-  Note any security-related functionality in the architecture and review its correct provision. Do this in an ad-hoc manner, from the point of view of anonymous users, authorized users, and specific application roles.
-#The output of this particular activity
-results:
-#The different metrics that can be used to measure the success of the activity
-metrics:
-#A description of the costs required to implement the activity
-costs:
-#The (standard) roles involved in the implementation of this activity
-personnel:
-#Internal notes that might help the author
-notes: |
-  Elements required for risk
-    - set of questions to evaluate
-    - risk levels to represent application risk
-    - risk portfolio
-#References to other activities that are prerequesites to implement this one.
-relatedactivities: |
-  - Security Requirements
+#Link to the activity that this question helps measure
+activity: 0f611af10f974da497e7f3defe0c4f12
+#Link to the answer set that contains the potential answers for this question
+answerset: f77bd45a28c8493dbba6e53b2eafa20f
+#Unique identifier (GUID) used to refer to this maturity level.
+#Please generate another identifier for your specific maturity level.
+id: 2da7acf355814b75ab971fec36048f11
+#One-sentence description of the criterium
+text: Do you review the application architecture for key security objectives on an ad-hoc basis?
+#Order of this question for the activity (in case there would be multiple)
+order: 1
+#Qualifying Criterion
+quality:
+  - You have an agreed upon model of the overall software architecture
+  - You include components, interfaces, and integrations in the architecture model
+  - You verify the correct provision of general security mechanisms
+  - You log missing security controls as defects
 #Type Classification of the Document
-type: Activity
+type: Question
