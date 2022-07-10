@@ -29,11 +29,17 @@ jobs:
       - run: tar -cvzf samm.tar.gz images model texts
       - name: Generate Excel spreadsheet from the model
         uses: owaspsamm/toolbox-spreadsheet@main
+      - name: Build Changelog
+        id: github_release
+        uses: mikepenz/release-changelog-builder-action@v3
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - uses: ncipollo/release-action@v1
         with:
           artifacts: samm.tar.gz, SAMM_spreadsheet.xlsx
           tag: ${{ env.RELEASE_VERSION }}
           token: ${{ secrets.GITHUB_TOKEN }}
+          body: ${{steps.github_release.outputs.changelog}}
       - name: Merge main into develop branch
         uses: thomaseizinger/create-pull-request@1.0.0
         env:

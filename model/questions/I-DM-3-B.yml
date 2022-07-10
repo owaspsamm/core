@@ -21,7 +21,7 @@ order: 1
 
 #Qualifying Criterion
 quality:
-- You have analyzed the effectivenss of the security metrics at least once in the last year
+- You have analyzed the effectiveness of the security metrics at least once in the last year
 - Where possible, you verify the correctness of the data automatically
 - The metrics is aggregated with other sources like threat intelligence or incident management
 - You derived at least one strategic activity from the metrics in the last year
