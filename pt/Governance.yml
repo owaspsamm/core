@@ -6,12 +6,12 @@
 model: SAMM20
 #Unique identifier (GUID) that can be used to refer to this function
 #Please generate another identifier for your specific function..
-id: 102ad02df5dc4a8eb3837ef4ca2c1af4
+id: 102ad02df5dc4a8eb3837ef4ca2c1aBR
 #Official name of the function
-name: Governance
+name: Governança
 #A multi-paragraph description of the function
 description: |
-  Governance focuses on the processes and activities related to how an organization manages overall software development activities. More specifically, this includes concerns that impact cross-functional groups involved in development, as well as business processes established at the organization level.
+  A governança se concentra nos processos e atividades relacionados à forma como uma organização gerencia as atividades gerais de desenvolvimento de software. Mais especificamente, isto inclui preocupações que afetam grupos multifuncionais envolvidos no desenvolvimento, bem como processos comerciais estabelecidos no nível da organização.
 #The color to be used to render the function and its subelements, in Hex RGB
 color:
 #228B22
@@ -20,4 +20,4 @@ logo: https://icon-library.net/icon/governance-icon-2.html
 #The relative order of the Business Function within the core model
 order: 1
 #Type Classification of the Document
-type: Function
+type: Função
