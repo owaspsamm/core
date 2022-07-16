@@ -1,23 +1,38 @@
 ---
 #===========================================================
-#OWASP SAMM2 Coverage Question template/sample
+#OWASP SAMM Activity Description
 #===========================================================
-#Link to the activity that this question helps measure
-activity: 5e1dd310e28449058046c7af0fe46fce
-#Link to the answer set that contains the potential answers for this question
-answerset: b6fd4b86ecf04955befe9322ff338ca8
-#Unique identifier (GUID) used to refer to this maturity level.
-#Please generate another identifier for your specific maturity level.
-id: b63b5fa0f5bc455bb5b1dd9168c44000
-#One-sentence description of the criterium
-text: Do you have a list of recommended technologies for the organization?
-#Order of this question for the activity (in case there would be multiple)
-order: 1
-#Qualifying Criterion
-quality:
-  - The list is based on technologies used in the software portfolio
-  - Lead architects and developers review and approve the list
-  - You share the list across the organization
-  - You review and update the list at least yearly
+#Link to the stream that this activity belongs to
+stream: 79754453c74b4143b20a57d0efdaab56
+#Link to the practice level that this activity belongs to
+level: 41c8e63716c34f1eaf09b8cad70cfbaf
+#Unique identifier (GUID) used to refer to this activity.
+#Please generate another identifier for your specific activity.
+id: 5e1dd310e28449058046c7af0fe46fBR
+#The title of this activity
+title: Promova ferramentas e tecnologias preferidas
+#Describe the benefit that is achieved by implementing this activity
+benefit: Tecnologias com nível de segurança adequado disponíveis para as equipes de produtos
+#A one sentence description of the activity
+shortDescription: Padronize tecnologias e estruturas a serem usadas nas diferentes aplicações
+#A multi-paragraph description of the activity
+longDescription: |
+  Identifique tecnologias, frameworks e ferramentas comumente utilizadas em projetos de software na organização, por meio das quais você se concentra em captar as tecnologias de alto nível.
+
+  Criar uma lista e compartilhá-la em toda a organização de desenvolvimento como tecnologias recomendadas. Ao selecioná-las, considere o histórico de incidentes, registro de resposta a vulnerabilidades, adequação das funcionalidades para a organização, complexidade excessiva no uso do componente de terceiros e conhecimento suficiente dentro da organização.
+
+  Desenvolvedores e arquitetos seniores criam essa lista, incluindo as contribuições de gerentes e auditores de segurança. Compartilhe esta lista de componentes recomendados com a organização de desenvolvimento. Em última análise, o objetivo é fornecer padrões bem conhecidos para as equipes de projeto. Realize uma revisão periódica dessas tecnologias para segurança e adequação.
+#The output of this particular activity
+results:
+#The different metrics that can be used to measure the success of the activity
+metrics:
+#A description of the costs required to implement the activity
+costs:
+#The (standard) roles involved in the implementation of this activity
+personnel:
+#Internal notes that might help the author
+notes:
+#References to other activities that are prerequesites to implement this one.
+relatedActivities:
 #Type Classification of the Document
-type: Question
+type: Atividade
