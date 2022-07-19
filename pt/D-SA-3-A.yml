@@ -10,13 +10,13 @@ answerset: f77bd45a28c8493dbba6e53b2eafa20f
 #Please generate another identifier for your specific maturity level.
 id: cb88049632b54a15b3d610c4d492e83e
 #One-sentence description of the criterium
-text: Do you base your design on available reference architectures?
+text: Você baseia seu design em arquiteturas de referência disponíveis?
 #Order of this question for the activity (in case there would be multiple)
 order: 1
 #Qualifying Criterion
 quality:
-  - You have one or more approved reference architectures documented and available to stakeholders
-  - You improve the reference architectures continuously based on insights and best practices
-  - You provide a set of components, libraries, and tools to implement each reference architecture
+  - Você tem uma ou mais arquiteturas de referência aprovadas e disponíveis para as partes interessadas
+  - Você melhora as arquiteturas de referência continuamente com base em percepções e melhores práticas
+  - Você fornece um conjunto de componentes, bibliotecas e ferramentas para implementar cada arquitetura de referência
 #Type Classification of the Document
-type: Question
+type: Pergunta
