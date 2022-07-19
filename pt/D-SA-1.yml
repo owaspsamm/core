@@ -10,5 +10,5 @@ maturitylevel: 0a1dc80f84964f2fa776c5d8e932353a
 #Please generate another identifier for your specific practice level.
 id: a11b78917dec4cfdad983cf6d1d17b61
 #Objective of this particular practice level
-objective: Insert consideration of proactive security guidance into the software design process. #Type Classification of the Document
-type: PracticeLevel
+objective: Inserir consideração de orientação de segurança pró-ativa no processo de design do software. #Type Classification of the Document
+type: Nível prático
