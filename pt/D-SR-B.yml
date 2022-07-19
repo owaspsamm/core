@@ -7,12 +7,12 @@ practice: 5702908efca4499e87a0239f32920d9b
 #Unique identifier to refer to this stream
 id: 8c1dcd10821f4f2baed52fdc83d93cf6
 #Official stream name
-name: Supplier Security
+name: Segurança do fornecedor
 #Stream letter, A or B
 letter: B
 #Multi-paragraph explanation of the stream
-description: Supplier security deals with requirements that are relative to supplier organizations within the development context of the application, in particular for outsourced development.
+description: A segurança dos fornecedores lida com requisitos relacionado às organizações de fornecedores no contexto de desenvolvimento da aplicação, em particular para o desenvolvimento terceirizado.
 #Relative order of the stream within the security stream  (A=1 ; B=2)
 order: 2
 #Type Classification of the Document
-type: Stream
+type: Fluxo
