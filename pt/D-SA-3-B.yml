@@ -10,13 +10,13 @@ answerset: f77bd45a28c8493dbba6e53b2eafa20f
 #Please generate another identifier for your specific maturity level.
 id: f4722a4fdfc44a45be5b5ee8dd7b735f
 #One-sentence description of the criterium
-text: Do you enforce the use of recommended technologies within the organization?
+text: Você impõe o uso de tecnologias recomendadas dentro da organização?
 #Order of this question for the activity (in case there would be multiple)
 order: 1
 #Qualifying Criterion
 quality:
-  - You monitor applications regularly for the correct use of the recommended technologies
-  - You solve violations against the list accoranding to organizational policies
-  - You take action if the number of violations falls outside the yearly objectives
+  - Você monitora aplicativos regularmente para o uso correto das tecnologias recomendadas
+  - Você resolve violações contra a lista conforme as políticas organizacionais
+  - Você toma medidas se o número de violações estiver fora dos objetivos anuais
 #Type Classification of the Document
-type: Question
+type: Pergunta
