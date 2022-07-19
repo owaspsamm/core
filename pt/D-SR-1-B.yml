@@ -10,12 +10,12 @@ answerset: d096060a4d864133afcbdd1397b95827
 #Please generate another identifier for your specific maturity level.
 id: 795e7ddd03f2443c851e34fc6e023d71
 #One-sentence description of the criterium
-text: Do stakeholders review vendor collaborations for security requirements and methodology?
+text: As partes interessadas analisam as colaborações dos fornecedores quanto aos requisitos e metodologia de segurança?
 #Order of this question for the activity (in case there would be multiple)
 order: 1
 #Qualifying Criterion
 quality:
-  - You consider including specific security requirements, activities, and processes when creating third-party agreements
-  - A vendor questionnaire is available and used to assess the strengths and weaknesses of your suppliers
+  - Você considera incluir requisitos específicos de segurança, atividades e processos ao criar acordos com terceiros
+  - Um questionário para fornecedores está disponível e é utilizado para avaliar os pontos fortes e fracos de seus fornecedores
 #Type Classification of the Document
-type: Question
+type: Pergunta
