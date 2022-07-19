@@ -7,12 +7,12 @@ practice: f9269aebfe2c4d5b9293ba42a40a93ac
 #Unique identifier to refer to this stream
 id: ed5a9c3dd7884c88918a45dc9d231c5d
 #Official stream name
-name: Threat Modeling
+name: Modelagem de Ameaça
 #Stream letter, A or B
 letter: B
 #Multi-paragraph explanation of the stream
-description: Threat modeling is intended to help software development teams understand what risks exist in what is being built, what could go wrong, and how we the risks can be mitigated or remediated.
+description: A modelagem de ameaças destina-se a ajudar equipes de desenvolvimento de software a entender os riscos existentes no que está sendo construído, o que poderia correr mal e como os riscos podem ser mitigados ou remediados.
 #Relative order of the stream within the security stream  (A=1 ; B=2)
 order: 2
 #Type Classification of the Document
-type: Stream
+type: Fluxo
