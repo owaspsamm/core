@@ -1,22 +1,37 @@
 ---
 #===========================================================
-#OWASP SAMM2 Coverage Question template/sample
+#OWASP SAMM Activity Description
 #===========================================================
-#Link to the activity that this question helps measure
-activity: 27cdd2a336a44e56a42632c7a78fcf4f
-#Link to the answer set that contains the potential answers for this question
-answerset: f77bd45a28c8493dbba6e53b2eafa20f
-#Unique identifier (GUID) used to refer to this maturity level.
-#Please generate another identifier for your specific maturity level.
-id: 47c8fb0cae5944d090d7f73f7632dc9f
-#One-sentence description of the criterium
-text: Você avalia a qualidade da segurança de tecnologias importantes utilizadas para o desenvolvimento?
-#Order of this question for the activity (in case there would be multiple)
-order: 1
-#Qualifying Criterion
-quality:
-  - Você tem uma lista das tecnologias mais importantes usadas em ou em suporte de cada aplicação
-  - Você identifica e rastreia os riscos tecnológicos
-  - Você garante que os riscos para essas tecnologias estão alinhados com a linha de base organizacional
+#Link to the stream that this activity belongs to
+stream: 79754453c74b4143b20a57d0efdaab56
+#Link to the practice level that this activity belongs to
+level: a11b78917dec4cfdad983cf6d1d17b61
+#Unique identifier (GUID) used to refer to this activity.
+#Please generate another identifier for your specific activity.
+id: 27cdd2a336a44e56a42632c7a78fcfBR
+#The title of this activity
+title: Identifique ferramentas e tecnologias
+#Describe the benefit that is achieved by implementing this activity
+benefit: Transparência das tecnologias que introduzem risco de segurança
+#A one sentence description of the activity
+shortDescription: Encontrar tecnologias, estruturas e integrações dentro da solução geral para identificar riscos.
+#A multi-paragraph description of the activity
+longDescription: |
+  As pessoas frequentemente seguem o caminho de menor resistência no desenvolvimento, implantação ou operação de uma solução de software. Novas tecnologias são freqüentemente incluídas quando elas podem facilitar ou acelerar o esforço ou permitir que a solução se dimensione melhor. Estas novas tecnologias podem, entretanto, introduzir novos riscos à organização que você precisa gerenciar.
+
+  Identifique as tecnologias, estruturas, ferramentas e integrações mais importantes que estão sendo utilizadas para cada aplicação. Use o conhecimento do arquiteto para estudar o ambiente de desenvolvimento e operação, assim como os artefatos. Em seguida, avaliá-los quanto à sua qualidade de segurança e levantar descobertas importantes a serem gerenciadas.
+#The output of this particular activity
+results:
+#The different metrics that can be used to measure the success of the activity
+metrics:
+#A description of the costs required to implement the activity
+costs:
+#The (standard) roles involved in the implementation of this activity
+personnel:
+#Internal notes that might help the author
+notes:
+#References to other activities that are prerequesites to implement this one.
+relatedActivities:
+  - e17d573510904f65a1fe6040b56ad0b1
 #Type Classification of the Document
-type: Pergunta
+type: Atividade
