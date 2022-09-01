@@ -45,7 +45,7 @@ notes: |
     - risk levels to represent application risk
     - risk portfolio
 
-#References to other activities that are prerequesites to implement this one.
+#References to other activities that are prerequisites to implement this one.
 relatedactivities: |
   - Security Requirements
 #Type Classification of the Document

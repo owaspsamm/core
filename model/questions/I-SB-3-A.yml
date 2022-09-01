@@ -21,7 +21,7 @@ order: 1
 #Qualifying Criterion
 quality:
 - Builds fail if the application doesn't meet a predefined security baseline
-- You have a maximum accepted severity for vulnerabilties
+- You have a maximum accepted severity for vulnerabilities
 - You log warnings and failures in a centralized system
 - You select and configure tools to evaluate each application against its security requirements at least once a year
 
