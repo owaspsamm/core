@@ -46,7 +46,13 @@ notes: |
     - risk portfolio
 
 #References to other activities that are prerequesites to implement this one.
-relatedactivities: |
-  - Security Requirements
+relatedActivities:
+  - 91086153b98b46928e36dd031b27bdc2  # Activity D-SR-1-A - Identify security requirements
+  - 2b01696356ed4652accf093f6c6a47ee  # Activity D-SR-1-B - Perform vendor assessments
+  - 1cc77725cb2349f394477838668f6184  # Activity D-SR-2-A - Standardize and integrate security requirements
+  - 5d5e3d9beab9498ca1ce66d3a53a81c6  # Activity D-SR-2-B - Discuss security responsibilities with suppliers
+  - ce13df2e0dfb455588bf75135f1a718e  # Activity D-SR-3-A - Develop a security requirements framework
+  - a9f56795ac84426c9e45f9471e82a8d7  # Activity D-SR-3-B - Align security methodology with suppliers
+
 #Type Classification of the Document
 type: Activity
