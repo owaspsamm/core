@@ -7,13 +7,13 @@ practice: bb5488860c124b6e8076b023485023e1
 #Unique identifier to refer to this stream
 id: 8a64c7b0b35a458ea436260d5e414dfa
 #Official stream name
-name: Deep Understanding
+name: Compreensão Profunda
 #Stream letter, A or B
 letter: B
 #Multi-paragraph explanation of the stream
 description: |
-  Deep understanding focuses on performing manual security testing of high-risk components, using complex attack vectors with the goal of making advanced security testing an integral part of the development process. The goal of this stream is to favor testing depth (testing rigour) over testing width (the portfolio of applications).
+  Compreensão profunda foca em executar testes manuais de segurança de componentes de alto risco, usando vetores de ataque complexos com o objetivo de tornar os testes de segurança avançados uma parte integral do processo de desenvolvimento. O objetivo deste fluxo é favorecer a profundidade de teste (rigor de teste) sobre a largura de teste (a carteira de aplicações).
 #Relative order of the stream within the security stream  (A=1 ; B=2)
 order: 2
 #Type Classification of the Document
-type: Stream
+type: Fluxo
