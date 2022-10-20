@@ -7,12 +7,12 @@ practice: 40d7879025144dbbbf34ba8ea82f060d
 #Unique identifier to refer to this stream
 id: 9ec70d6f7ddb4cb6b37928f9994c6049
 #Official stream name
-name: Deployment Process
+name: Processo de implantação
 #Stream letter, A or B
 letter: A
 #Multi-paragraph explanation of the stream
-description: A repeatable and consistent deployment process ensures you only deploy correct software artifacts to production. It also paves the way for representative test environments prior to production.
+description: Um processo de implantação repetível e consistente garante que você só implanta artefatos de software corretos para produção. Ele também abre caminho para ambientes de teste representativos antes de produção.
 #Relative order of the stream within the security stream  (A=1 ; B=2)
 order: 1
 #Type Classification of the Document
-type: Stream
+type: Fluxo
