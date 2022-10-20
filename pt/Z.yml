@@ -15,19 +15,19 @@ values:
     order: 0
   - 
     #second level
-    text: Yes, but we improve it ad-hoc
+    text: Sim, mas nós o melhoramos sob demanda
     value: 0.25
     weight: 1
     order: 1
   - 
     #third level
-    text: Yes, we we improve it at regular times
+    text: Sim, nós o melhoramos regularmente
     value: 0.5
     weight: 1
     order: 2
   - 
     #highest level
-    text: Yes, we improve it at least annually
+    text: Sim, nós o melhoramos pelo menos uma vez por ano
     value: 1
     weight: 1
     order: 3
