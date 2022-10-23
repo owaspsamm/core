@@ -26,7 +26,7 @@ shortDescription: Analyze used dependencies for security issues in a comparable 
 longDescription: |
   Maintain a whitelist of approved dependencies and versions, and ensure that the build process fails upon a presence of dependency not being on the list. Include a sign-off process for handling exceptions to this rule if sensible.
 
-  Perform security verification activites against dependencies on the whitelist in a comparable way to the target applications themselves (esp. using SAST and analyzing transitive dependencies). Ensure that these checks also aim to identify possible backdoors or easter eggs in the dependencies. Establish vulnerability disclosure processes with the dependency authors including SLAs for fixing issues. In case enforcing SLAs is not realistic (e.g. with open source vulnerabilities), ensure that the most probable cases are expected and you are able to implement compensating measures in a timely manner. Implement regression tests for the fixes to identified issues.
+  Perform security verification activities against dependencies on the whitelist in a comparable way to the target applications themselves (esp. using SAST and analyzing transitive dependencies). Ensure that these checks also aim to identify possible backdoors or easter eggs in the dependencies. Establish vulnerability disclosure processes with the dependency authors including SLAs for fixing issues. In case enforcing SLAs is not realistic (e.g. with open source vulnerabilities), ensure that the most probable cases are expected and you are able to implement compensating measures in a timely manner. Implement regression tests for the fixes to identified issues.
 
   Track all identified issues and their state using your defect tracking system. Integrate your build pipeline with this system to enable failing the build whenever the included dependencies contain issues above a defined criticality level.
 
@@ -52,7 +52,7 @@ personnel:
 #Internal notes that might help the author
 notes: None
 
-#References to other activities that are prerequesites to implement this one.
+#References to other activities that are prerequisites to implement this one.
 relatedActivities:
 - 2bf0e192a904444b8a2f38c33256e80a   #I-DM-2-A
 - 15d73a64818c43019504c8d938ca2434   #I-DM-2-B

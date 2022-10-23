@@ -42,7 +42,7 @@ personnel:
 #Internal notes that might help the author
 notes:
 
-#References to other activities that are prerequesites to implement this one.
+#References to other activities that are prerequisites to implement this one.
 relatedActivities:
 - e17d573510904f65a1fe6040b56ad0b1
 

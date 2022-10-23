@@ -54,7 +54,7 @@ personnel:
 #Internal notes that might help the author
 notes: None
 
-#References to other activities that are prerequesites to implement this one.
+#References to other activities that are prerequisites to implement this one.
 relatedActivities:
 - 93dff7be5f954f8d87d24f4261002508   #I-DM-1-A
 #Type Classification of the Document
