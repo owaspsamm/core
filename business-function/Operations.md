@@ -1,0 +1,17 @@
+---
+title: Operations
+url: ./model/operations/
+description: Operations business function
+
+practice_1: Incident Management
+practice_1_url: incident-management
+practice_2: Environment Management
+practice_2_url: environment-management
+practice_3: Operational Management
+practice_3_url: operational-management
+
+keywords: ["Business function"]
+---
+
+The Operations Business Function encompasses those activities necessary to ensure confidentiality, integrity, and availability are maintained throughout the operational lifetime of an application and its associated data. Increased maturity with regard to this Business Function provides greater assurance that the organization is resilient in the face of operational disruptions, and responsive to changes in the operational landscape.
+
