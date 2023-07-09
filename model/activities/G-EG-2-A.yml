@@ -24,7 +24,7 @@ shortDescription: Offer technology and role-specific guidance, including securit
 
 #A multi-paragraph description of the activity
 longDescription: |
-  Conduct instructor-led or CBT security training specific to the organization’s roles and technologies, starting with the core development team. The organization customizes training for product managers, software developers, testers, and security auditors, based on each group’s technical needs.
+  Conduct instructor-led or CBT security training specific to the organization's roles and technologies, starting with the core development team. The organization customizes training for product managers, software developers, testers, and security auditors, based on each group's technical needs.
 
   - Product managers train on topics related to SAMM business functions and security practices, with emphasis on security requirements, threat modeling, and defect tracking.
   - Developers train on coding standards and best practices for the technologies they work with to ensure the training directly benefits application security. They have a solid technical understanding of the OWASP Top 10 vulnerabilities, or similar weaknesses relevant to the technologies and frameworks used (e.g. mobile), and the most common remediation strategies for each issue.
