@@ -16,7 +16,7 @@ letter: B
 
 #Multi-paragraph explanation of the stream
 description: Threat modeling is intended to help software development teams understand
-  what risks exist in what is being built, what could go wrong, and how we the risks
+  what risks exist in what is being built, what could go wrong, and how the risks
   can be mitigated or remediated.
 
 #Relative order of the stream within the security stream  (A=1 ; B=2)

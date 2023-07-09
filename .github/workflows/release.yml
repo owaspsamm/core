@@ -1,31 +1,31 @@
 name: Release
-
 on:
   pull_request:
     branches:
       - main
     types:
       - closed
-
 jobs:
   release:
     name: Publish new release
     runs-on: ubuntu-latest
-    if: github.event.pull_request.merged == true # only merged pull requests must trigger this job
+    if: github.event.pull_request.merged == true     # only merged pull requests must trigger this job
     steps:
       - name: Extract version from branch name (for release branches)
         if: startsWith(github.event.pull_request.head.ref, 'release/')
+        env:
+          BRANCH_NAME: "${{ github.event.pull_request.head.ref }}"
         run: |
-          BRANCH_NAME="${{ github.event.pull_request.head.ref }}"
-          VERSION=${BRANCH_NAME#release/}
-          echo "RELEASE_VERSION=$VERSION" >> $GITHUB_ENV
+          VERSION="${BRANCH_NAME#release/}"
+          echo "RELEASE_VERSION=$VERSION" >> "$GITHUB_ENV"
       - name: Extract version from branch name (for hotfix branches)
         if: startsWith(github.event.pull_request.head.ref, 'hotfix/')
+        env:
+          BRANCH_NAME: "${{ github.event.pull_request.head.ref }}"
         run: |
-          BRANCH_NAME="${{ github.event.pull_request.head.ref }}"
-          VERSION=${BRANCH_NAME#hotfix/}
-          echo "RELEASE_VERSION=$VERSION" >> $GITHUB_ENV
-      - uses: actions/checkout@v2
+          VERSION="${BRANCH_NAME#hotfix/}"
+          echo "RELEASE_VERSION=$VERSION" >> "$GITHUB_ENV"
+      - uses: actions/checkout@v3
       - run: tar -cvzf samm.tar.gz images model texts
       - name: Generate Excel spreadsheet from the model
         uses: owaspsamm/toolbox-spreadsheet@main
@@ -47,7 +47,7 @@ jobs:
         with:
           head: main
           base: develop
-          title: Merge master into dev branch
+          title: Merge main into develop branch
           body: |
-            This PR merges the master branch back into dev.
-            This happens to ensure that the updates that happened on the release branch, i.e. CHANGELOG and manifest updates are also present on the dev branch.
+            This PR merges the main branch back into develop.
+            This happens to ensure that the updates that happened on the release branch, i.e. CHANGELOG and manifest updates are also present on the develop branch.
