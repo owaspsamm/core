@@ -16,7 +16,7 @@ name: Incident Management
 shortName: IM
 
 #A one sentence description of the security practice
-shortDescription: This practice addresses activities carried out improve the organization's detection of, and response to, security incidents.
+shortDescription: This practice addresses activities carried out to improve the organization's detection of, and response to, security incidents.
 
 #A multi-paragraph description of the security practice
 longDescription: |
