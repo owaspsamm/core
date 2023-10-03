@@ -6,7 +6,7 @@
 activity: aa962032982a4d53bd34cd8771558df1
 
 #Link to the answer set that contains the potential answers for this question
-answerset: f77bd45a28c8493dbba6e53b2eafa20f
+answerSet: f77bd45a28c8493dbba6e53b2eafa20f
 
 #Unique identifier (GUID) used to refer to this maturity level.
 #Please generate another identifier for your specific maturity level.
