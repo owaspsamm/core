@@ -21,7 +21,7 @@ order: 1
 #Qualifying Criteria
 quality:
 - You have an agreed upon incident classification
-- The process considers Root Case Analysis for high severity incidents
+- The process considers Root Cause Analysis for high severity incidents
 - Employees responsible for incident response are trained in this process
 - Forensic analysis tooling is available
 #Type Classification of the Document
