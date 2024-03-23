@@ -45,7 +45,7 @@ notes: |
   I removed references to specific tools and a detailed explanation of denial of service tests. These can all be added to the guidance notes.
 
 #References to other activities that are prerequisites to implement this one.
-dependencies:
+relatedActivities:
 
 #Type Classification of the Document
 type: Activity
