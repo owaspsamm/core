@@ -46,7 +46,7 @@ personnel:
 notes:
 
 #References to other activities that are prerequisites to implement this one.
-dependencies:
+relatedActivities:
 - e17d573510904f65a1fe6040b56ad0b1   # Practice I-Defect-Management
 
 #Type Classification of the Document
