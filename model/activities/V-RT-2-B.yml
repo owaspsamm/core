@@ -42,6 +42,6 @@ personnel:
 notes:
 
 #References to other activities that are prerequisites to implement this one.
-dependencies:
+relatedActivities:
 #Type Classification of the Document
 type: Activity
