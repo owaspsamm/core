@@ -52,7 +52,7 @@ personnel:
 notes: None
 
 #References to other activities that are prerequisites to implement this one.
-relatedActivites:
+relatedActivities:
 - 994bcac2bb7c4cc59a0faa365a0b58a0   #I-SD-1-A
 
 #Type Classification of the Document
