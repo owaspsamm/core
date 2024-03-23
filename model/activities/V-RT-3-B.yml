@@ -23,7 +23,7 @@ shortDescription: Denial of service and security stress testing.
 
 #A multi-paragraph description of the activity
 longDescription: |
-  Applications are particularly susceptible to denial of service attacks. Perform denial of service and security stress testing against them in controlled conditiions, preferably on application acceptance environments.
+  Applications are particularly susceptible to denial of service attacks. Perform denial of service and security stress testing against them in controlled conditions, preferably on application acceptance environments.
 
   Load testing tools generate synthetic traffic, allowing you to test the application's performance under heavy load. One important test is how many requests per second an application can handle while remaining within its performance requirements. Testing from a single IP address is still useful as it gives an indication of how many requests an attacker must generate to impact the application.
 
