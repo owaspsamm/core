@@ -23,12 +23,14 @@ order: 1
 quality:
 - Training is repeatable, consistent, and available to anyone involved with software
   development lifecycle
-- Training includes the latest OWASP Top 10 if appropriate and includes concepts such
+- Training includes relevant content from the latest OWASP Top 10 and includes concepts such
   as Least Privilege, Defense-in-Depth, Fail Secure (Safe), Complete Mediation, Session
   Management, Open Design, and Psychological Acceptability
 - Training requires a sign-off or an acknowledgement from attendees
-- You have updated the training in the last 12 months
-- Training is required during employees' onboarding process
+- You have reviewed the training content within the last 12 months, and have completed any required updates
+- All new covered staff are required to complete training during their onboarding process 
+- Existing covered staff are required to complete training when content is added/revised, or
+  complete refresher training at least every 24 months
 
 #Type Classification of the Document
 type: Question
