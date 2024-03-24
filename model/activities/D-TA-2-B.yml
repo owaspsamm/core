@@ -31,7 +31,7 @@ longDescription: |
 
   Your threat modeling methodology includes at least diagramming, threat identification, design flaw mitigations, and how to validate your threat model artifacts. Your threat model diagram allows a detailed understanding of the environment and the mechanics of the application. You discover threats to your application with checklists, such as STRIDE or more organization-specific threats. For identified design flaws (ranked according to risk for your organization), you add mitigating controls to support stakeholders in dealing with particular threats. Define what triggers updating a threat model, for example, a technology change or deployment of an application in a new environment.
 
-  Feed the output of threat modeling to the defect management process for adequate follow-up. Capture the threat modeling artifacts with tools that are used by your application teams.
+  Feed the output of threat modeling to the defect management process for adequate follow-up. Capture the threat modeling artifacts with tools used by your application teams.
 
 #The output of this particular activity
 results:

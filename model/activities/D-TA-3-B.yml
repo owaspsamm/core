@@ -24,7 +24,7 @@ shortDescription: Continuously optimization and automation of your threat modeli
 
 #A multi-paragraph description of the activity
 longDescription: |
-  Threat modeling is integrated into your SDLC and has become part of the developer security culture.  Reusable risk patterns, comprising of related threat libraries, design flaws, and security mitigations, are created and improved, based on the organization's threat models. You regularly (e.g., yearly) review the existing threat models to verify that no new threats are relevant for your applications.
+  Threat modeling is integrated into your SDLC and has become part of the developer security culture.  Reusable risk patterns, comprising related threat libraries, design flaws, and security mitigations, are created and improved, based on the organization's threat models. You regularly (e.g., yearly) review the existing threat models to verify that no new threats are relevant for your applications.
 
   You optimize your threat modeling methodology. You capture lessons learned from threat models and use these to improve your threat modeling methodology.  You review the threat categories relevant to your organization and update your methodology appropriately. From time to time, you evaluate the quality of your threat models independently.
 
