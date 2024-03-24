@@ -6,7 +6,7 @@
 practice: e17d573510904f65a1fe6040b56ad0b1
 
 #Link to the maturity level, using its unique identifier
-maturitylevel: 7bbfe31d447e48759ef0f2af25c31b43
+maturityLevel: 7bbfe31d447e48759ef0f2af25c31b43
 
 #Unique identifier (GUID) used to refer to this practice level.
 #Please generate another identifier for your specific practice level.
