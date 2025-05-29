@@ -14,17 +14,17 @@ values:
   weight: 1
   order: 0
     #second level
-- text: Yes, we do it when requested
+- text: Yes, but we do it ad-hoc
   value: 0.25
   weight: 1
   order: 1
     #third level
-- text: Yes, we do it every few years
+- text: Yes, we do it regularly
   value: 0.5
   weight: 1
   order: 2
     #highest level
-- text: Yes, we do it at least annually
+- text: Yes, we do it continuously
   value: 1
   weight: 1
   order: 3

@@ -19,12 +19,12 @@ values:
   weight: 1
   order: 1
     #third level
-- text: Yes, we review it at regular times
+- text: Yes, we review it regularly
   value: 0.5
   weight: 1
   order: 2
     #highest level
-- text: Yes, we review it at least annually
+- text: Yes, we review it continuously
   value: 1
   weight: 1
   order: 3
