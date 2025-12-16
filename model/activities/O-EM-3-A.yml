@@ -50,8 +50,7 @@ notes:
 
 #References to other activities that are related to this one
 relatedActivities:
-- 93dff7be5f954f8d87d24f4261002508   # Activity I-DM-1-A - Track all defects
-- 2bf0e192a904444b8a2f38c33256e80a   # Activity I-DM-2-A - Assign SLA based on security rating
+- 93dff7be5f954f8d87d24f4261002508   #I-DM-1-A
 
 #Type Classification of the Document
 type: Activity
