@@ -25,7 +25,7 @@ longDescription: |
 
   The practice’s first stream deals with the process of handling and managing defects to ensure released software has a given assurance level. The second stream focuses on enriching the information about the defects and deriving metrics to guide decisions about the security of individual projects and of the security assurance program as a whole.
 
-  In a sophisticated form, the practice requires formalised, independent defect management and real-time, correlated information to detect trends and influence security strategy.
+  In a sophisticated form, the practice requires formalized, independent defect management and real-time, correlated information to detect trends and influence security strategy.
 #The relative order of this practice in the business function
 order: 3
 

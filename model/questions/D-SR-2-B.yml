@@ -21,7 +21,7 @@ order: 1
 #Qualifying Criterion
 quality:
 - You discuss security requirements with the vendor when creating vendor agreements
-- Vendor agreements provide specific guidance on security defect remediation within an agreed upon timeframe
+- Vendor agreements provide specific guidance on security defect remediation within an agreed-upon timeframe
 - The organization has a templated agreement of responsibilities and service levels for key vendor security processes
 - You measure key performance indicators
 

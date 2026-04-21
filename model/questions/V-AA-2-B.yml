@@ -21,7 +21,7 @@ order: 1
 #Qualifying Criterion
 quality:
 - You systematically review each threat identified in the Threat Assessment
-- Trained or experienced people lead review exercise
+- Trained or experienced people lead the review exercise
 - You identify mitigating design-level features for each identified threat
 - You log unhandled threats as defects
 

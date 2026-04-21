@@ -21,8 +21,8 @@ order: 1
 #Qualifying Criterion
 quality:
 - You tune and select tool features which match your application or technology stack
-- You minimize false positives by silencing or automatically filter irrelevant warnings or low probability findings
-- You minimize false negatives by leverage tool extensions or DSLs to customize tools for your application or organizational standards
+- You minimize false positives by silencing or automatically filtering irrelevant warnings or low-probability findings
+- You minimize false negatives by leveraging tool extensions or DSLs to customize tools for your application or organizational standards
 
 #Type Classification of the Document
 type: Question

@@ -14,7 +14,7 @@ id: 0247b5b573b843609fdff791a1cc7c1b
 
 #One-sentence description of the criterium
 text: Do you regularly evaluate the effectiveness of your security metrics so that
-  its input helps drive your security strategy?
+  their input helps drive your security strategy?
 
 #Order of this question for the activity (in case there would be multiple)
 order: 1
@@ -23,7 +23,7 @@ order: 1
 quality:
 - You have analyzed the effectiveness of the security metrics at least once in the last year
 - Where possible, you verify the correctness of the data automatically
-- The metrics is aggregated with other sources like threat intelligence or incident management
+- The metrics are aggregated with other sources like threat intelligence or incident management
 - You derived at least one strategic activity from the metrics in the last year
 
 #Type Classification of the Document

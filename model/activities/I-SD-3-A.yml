@@ -19,8 +19,7 @@ title: Verify the integrity of deployment artifacts
 benefit: Assured integrity of artifacts being deployed to production
 
 #A one sentence description of the activity
-shortDescription: Automatically verify integrity of all deployed software, independently
-  on whether it's internally or externally developed.
+shortDescription: Automatically verify the integrity of all deployed software, regardless of whether it's internally or externally developed.
 
 #A multi-paragraph description of the activity
 longDescription: |
