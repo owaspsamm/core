@@ -14,7 +14,7 @@ values:
   weight: 1
   order: 0
     #second level
-- text: Yes, we review it annually
+- text: Yes, we have a plan that can be used for decision making
   value: 0.25
   weight: 1
   order: 1
