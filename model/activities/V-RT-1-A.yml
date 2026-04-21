@@ -43,7 +43,6 @@ notes:
 
 #References to other activities that are prerequisites to implement this one.
 relatedActivities:
-- 5702908efca4499e87a0239f32920d9b     # Practice D-Security-Requirements
 
 #Type Classification of the Document
 type: Activity

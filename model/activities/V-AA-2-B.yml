@@ -45,5 +45,7 @@ notes:
 
 #References to other activities that are prerequisites to implement this one.
 relatedActivities:
+- 1ceadbb5a0024e2599821e7ce756f3a4   #D-TA-1-B
+
 #Type Classification of the Document
 type: Activity

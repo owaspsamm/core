@@ -58,8 +58,7 @@ notes: None
 
 #References to other activities that are prerequisites to implement this one.
 relatedActivities:
-- 5bcb52375a0f4085bb12266c9ecfa84d   #O-IM-2-A
-- 4f6a06796d0840debcc775ea1af65679   #V-ST-3-A
-- a395d69917b947b28d5995738d716283   #V-ST-3-B
+- ef0b56870b734b13868697017a9b605e   #G-SM-1-A
+
 #Type Classification of the Document
 type: Activity

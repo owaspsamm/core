@@ -53,7 +53,7 @@ notes: None
 
 #References to other activities that are prerequisites to implement this one.
 relatedActivities:
-- 281369f491da4d4c84b0729e344e2c93   #I-SB-3-A
+- bf536a9305134a769adbd414652054ee   #I-SB-1-A
 
 #Type Classification of the Document
 type: Activity

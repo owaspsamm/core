@@ -47,7 +47,7 @@ notes:
 
 #References to other activities that are prerequisites to implement this one.
 relatedActivities:
-- e17d573510904f65a1fe6040b56ad0b1   # Practice I-Defect-Management
+- 93dff7be5f954f8d87d24f4261002508   #I-DM-1-A
 
 #Type Classification of the Document
 type: Activity
