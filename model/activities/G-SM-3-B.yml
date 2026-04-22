@@ -19,18 +19,60 @@ title: Drive the security program through metrics
 benefit: Continuous improvement of your program according to results
 
 #A one sentence description of the activity
-shortDescription: Influence the strategy based on the metrics and organizational needs.
+shortDescription: Use metrics to drive security program improvements and regularly assess whether your metrics still serve their intended goals.
 
 #A multi-paragraph description of the activity
 longDescription: |
-  Define guidelines for influencing the Application Security program based on the KPIs and other application security metrics. These guidelines combine the maturity of the application development process and procedures with different metrics to make the program more efficient. The following examples show a relationship between measurements and ways of evolving and improving application security:
+  At this level, metrics and KPIs are no longer adopted because they are convenient or produced by a tool. 
+  Most are deliberately derived from a program goal, subjected to quality scrutiny, and retired when it no 
+  longer serves its purpose. The measurement program itself is treated as something 
+  to be evaluated and evolved alongside the application security program it informs.
 
-  * Focus on maturity of the development lifecycle makes the relative cost per defect lower by applying security proactively.
-  * Monitoring the balance between effort, result, and environment metrics improves the program's efficiency and justifies additional automation and other methods for improving the overall application security baselines.
-  * Individual Security Practices could provide indicators of success or failure of individual application security initiatives.
-  * Effort metrics help ensure application security work is directed at the more relevant and important technologies and disciplines.
+  Adopt the Goal-Question-Metric (GQM) approach, or an equivalent structured method, for
+  deriving metrics. GQM operates at three levels:
+  
+  * `Goal`: define a goal in terms of its purpose (e.g., improve, evaluate, monitor), the object
+      being measured (a process, product, or resource), the quality issue of concern, and the
+      viewpoint from which it is assessed (e.g., security team, engineering leadership).
+  * `Question`: derive questions that characterize the object with respect to the goal. A
+      well-formed goal typically produces at least three groups of questions: what is the current
+      state of the object, what attributes are relevant to the issue, and whether performance is
+      moving in the right direction.
+  * `Metric`: associate each question with the measurements that answer it. 
+      The same metric can answer multiple questions across the same goal.
+  
+  Starting from a metric that is conveniently available and inventing a goal for it afterward is a warning sign.
+  Exploratory metrics collected to better understand a complex or poorly understood phenomenon before formulating any goals are a legitimate exception.
 
-  When defining the overall metrics strategy, keep the end-goal in mind and define what decisions can be made as a result of changes in KPIs and metrics as soon as possible, to help guide development of metrics.
+  Periodically evaluate metrics and KPIs against measurement-quality criteria. Validity describes
+  how well a metric actually measures what it claims to measure. A metric can be precise and
+  consistently collected, yet still measure the wrong thing. Validity threats do not necessarily
+  disqualify a metric; they surface questions worth asking and document known limitations so
+  that consumers of the metric interpret it with appropriate caution. Three types of validity
+  threat are particularly useful when evaluating security metrics:
+
+  * `Content validity`: does the metric cover the full scope of what it claims to measure?
+    *Number of training hours completed* has a content validity threat as a measure of security
+    awareness. It captures exposure time, not the breadth of material covered. *Percentage of
+    top security risks addressed in training* is stronger, as it directly reflects whether the
+    training content covers the territory awareness is supposed to span.
+
+  * `Criterion validity`: does the metric correlate with an accepted reference or outcome?
+    Even with good content coverage, a training metric may not reflect what people actually
+    retain. *Percentage of top security risks retained by staff after three months* correlates
+    more directly with awareness than coverage alone, and can be validated against periodic
+    knowledge assessments.
+
+  * `Construct validity`: does the metric measure the construct it claims to, rather than a
+    proxy that drifts over time? Retention scores measure memory, not awareness in practice.
+    *Rate at which staff identify and report real security issues* is closer to the construct:
+    awareness exists to produce security-relevant behaviour, not to produce good quiz results.
+
+  Use the evaluation to close the loop back into the application security program. Metrics and
+  KPIs should be a significant input to changes in the program's strategy and roadmap.
+  Conversely, changes in the program's direction should trigger re-evaluation of whether the
+  current metrics still serve the new goals. Retire metrics that no longer answer a meaningful
+  question, and introduce new ones through the same GQM derivation.
 
 #The output of this particular activity
 results:

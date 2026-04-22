@@ -24,13 +24,15 @@ shortDescription: Define metrics with insight into the effectiveness and efficie
 
 #A multi-paragraph description of the activity
 longDescription: |
-  Define and document metrics to evaluate the effectiveness and efficiency of the application security program. This way, improvements are measurable and you can use them to secure future support and funding for the program. Considering the dynamic nature of most development environments, metrics should consist of measurements in the following categories
+  Define and document metrics to evaluate the effectiveness and efficiency of the application security program. At this level, measurement is about gaining visibility. For instance, using metrics for noticing trends, spotting anomalies, and giving leadership and teams a shared basis for conversation about the state of the program. Measurable improvements can also be used to secure future support and funding for the program.
 
-  * `Effort` metrics measure the effort spent on security. For example training hours, time spent performing code reviews, and number of applications scanned for vulnerabilities.
-  * `Result` metrics measure the results of security efforts. Examples include number of outstanding patches with security defects and number of security incidents involving application vulnerabilities.
-  * `Environment` metrics measure the environment where security efforts take place. Examples include number of applications or lines of code as a measure of difficulty or complexity.
+  Metrics at this level should cover concerns that span the whole program rather than being tied to a single application or tool. Useful examples include:
 
-  Each metric by itself is useful for a specific purpose, but a combination of two or three metrics together helps explain spikes in metrics trends. For example, a spike in a total number of vulnerabilities may be caused by the organization on-boarding several new applications that have not been previously exposed to the implemented application security mechanisms. Alternatively, an increase in the environment metrics without a corresponding increase in the effort or result could be an indicator of a mature and efficient security program.
+  * Exposure of secrets across repositories and developer machines
+  * Open vulnerabilities and their follow-up across products
+  * Dependency hygiene, such as the proportion of outdated or vulnerable dependencies
+  * Coverage of security activities such as code reviews, scans, and threat modeling
+  * Remediation times for security issues
 
   While identifying metrics, it's always recommended to stick to the metrics that meet several criteria
 
@@ -39,7 +41,7 @@ longDescription: |
   * Expressed as a cardinal number or a percentage
   * Expressed as a unit of measure
 
-  Document metrics and include descriptions of best and most efficient methods for gathering data, as well as recommended methods for combining individual measures into meaningful metrics. For example, a number of applications and a total number of defects across all applications may not be useful by themselves but, when combined as a number of outstanding high-severity defects per application, they provide a more actionable metric.
+  Document each metric with its source, what it covers, known limitations, and guidance on how to interpret movement. Publish metrics to the application security and development teams so they can reason about the program together.
 
 #The output of this particular activity
 results:
