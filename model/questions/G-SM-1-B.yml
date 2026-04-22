@@ -6,7 +6,7 @@
 activity: 0082a76b1a3744d9ab0443bd2168e13d
 
 #Link to the answer set that contains the potential answers for this question
-answerSet: 608f87d59da44e589f0090790675ed23
+answerSet: f77bd45a28c8493dbba6e53b2eafa20f
 
 #Unique identifier (GUID) used to refer to this maturity level.
 #Please generate another identifier for your specific maturity level.
@@ -21,12 +21,13 @@ order: 1
 
 #Qualifying Criterion
 quality:
-- You document each metric, including a description of the sources, measurement coverage,
-  and guidance on how to use it to explain application security trends
-- Metrics include measures of effort, results, and environment measurement categories
-- Most of the metrics are frequently measured, easy or inexpensive to gather, and
-  expressed as a cardinal number or a percentage
-- Application security and development teams publish metrics
+  - You document each metric, including a description of the sources, measurement coverage,
+    and guidance on how to use it to explain application security trends
+  - Metrics cover program-wide concerns across applications and teams (for example,
+    secrets exposure, vulnerability follow-up, dependency hygiene)
+  - Most of the metrics are frequently measured, easy or inexpensive to gather, and
+    expressed as a cardinal number or a percentage
+  - Application security and development teams publish metrics
 
 #Type Classification of the Document
 type: Question

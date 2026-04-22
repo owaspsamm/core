@@ -13,17 +13,19 @@ answerSet: 01b2ac64461d4ec6b40843a4c77e1ba6
 id: efdc34fbb75b405b8107d63d58fa7286
 
 #One-sentence description of the criterium
-text: Do you update the Application Security strategy and roadmap based on application
-  security metrics and KPIs?
+text: Do you evaluate your application security metrics to ensure they remain relevant,
+  valid and tied to program goals?
 
 #Order of this question for the activity (in case there would be multiple)
 order: 1
 
 #Qualifying Criterion
 quality:
-- You review KPIs at least yearly for their efficiency and effectiveness
-- KPIs and application security metrics trigger most of the changes to the application
-  security strategy
+  - You review KPIs and metrics at least yearly for their efficiency and effectiveness
+  - Each metric traces to a specific program goal and to the question(s) it is
+    intended to answer about progress on that goal
+  - Metrics are evaluated for content, criterion and construct validity
+  - Changes to the application security strategy are informed by metrics and KPIs
 
 #Type Classification of the Document
 type: Question
