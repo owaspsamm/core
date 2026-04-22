@@ -19,7 +19,7 @@ title: Include application secrets during deployment
 benefit: Detection of potential leakage of production secrets
 
 #A one sentence description of the activity
-shortDescription: Inject secrets dynamically during deployment process from hardened storages and audit all human access to them.
+shortDescription: Inject secrets dynamically during the deployment process from hardened storage and audit all human access to them.
 
 #A multi-paragraph description of the activity
 longDescription: |

@@ -16,7 +16,7 @@ id: 994bcac2bb7c4cc59a0faa365a0b58a0
 title: Use a repeatable deployment process
 
 #Describe the benefit that is achieved by implementing this activity
-benefit: Limited risk of human error during deployment process minimizing security issues
+benefit: Limited risk of human error during the deployment process, minimizing security issues
 
 #A one sentence description of the activity
 shortDescription: Formalize the deployment process and secure the used tooling and

@@ -20,7 +20,7 @@ order: 1
 
 #Qualifying Criterion
 quality:
-  - The threat model methodology considers historical feedback for improvement
+  - The threat modeling methodology considers historical feedback for improvement
   - You regularly (e.g., yearly) review the existing threat models to verify that no new threats are relevant for your applications
   - You automate parts of your threat modeling process with threat modeling tools
 

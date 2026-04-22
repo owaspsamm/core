@@ -26,7 +26,7 @@ shortDescription: Ensure proper security coverage for external suppliers by prov
 longDescription: |
   The best way to minimize the risk of issues in software is to align maximally and integrate closely between the different parties. From a process perspective, this means using similar development paradigms and introducing regular milestones to ensure proper alignment and qualitative progress. From a tools perspective, this might mean using similar build, verification and deployment environments, and sharing other supporting tools (e.g. requirements, architecture tools, or code repositories).
 
-  In case suppliers cannot meet the objectives that you have set, implement compensating controls so that, overall, you meet your objectives. Execute extra activities (e.g., threat modelling before starting the actual implementation cycle) or implement extra tooling (e.g., 3rd party library analysis at solution intake). The more suppliers deviate from your requirements, the more work will be required to compensate.
+  In case suppliers cannot meet the objectives that you have set, implement compensating controls so that, overall, you meet your objectives. Execute extra activities (e.g., threat modeling before starting the actual implementation cycle) or implement extra tooling (e.g., third-party library analysis at solution intake). The more suppliers deviate from your requirements, the more work will be required to compensate.
 
 #The output of this particular activity
 results:

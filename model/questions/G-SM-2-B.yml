@@ -13,7 +13,7 @@ answerSet: 439e7b91e6b446ae83b4d1efe831a97d
 id: 26f12b057f2b44f386d9af391383b590
 
 #One-sentence description of the criterium
-text: Did you define Key Performance Indicators (KPI) from available application security
+text: Have you defined Key Performance Indicators (KPIs) from available application security
   metrics?
 
 #Order of this question for the activity (in case there would be multiple)
@@ -21,8 +21,8 @@ order: 1
 
 #Qualifying Criterion
 quality:
-- You defined KPIs after gathering enough information to establish realistic objectives
-- You developed KPIs with the buy-in from the leadership and teams responsible for
+- You define KPIs after gathering enough information to establish realistic objectives
+- You develop KPIs with buy-in from the leadership and teams responsible for
   application security
 - KPIs are available to the application teams and include acceptability thresholds
   and guidance in case teams need to take action

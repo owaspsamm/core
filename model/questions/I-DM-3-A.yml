@@ -20,7 +20,7 @@ order: 1
 
 #Qualifying Criterion
 quality:
-- You automatically alert of SLA breaches and transfer respective defects to the risk management process
+- You automatically generate alerts for SLA breaches and transfer respective defects to the risk management process
 - You integrate relevant tooling (e.g. monitoring, build, deployment) with the defect management system
 
 #Type Classification of the Document

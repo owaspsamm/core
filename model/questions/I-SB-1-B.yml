@@ -13,7 +13,7 @@ answerSet: f77bd45a28c8493dbba6e53b2eafa20f
 id: 1e28b82cc3ba4e4ea2552746e17c25af
 
 #One-sentence description of the criterium
-text: Do you have solid knowledge about dependencies you're relying on?
+text: Do you have solid knowledge of the dependencies you rely on?
 
 #Order of this question for the activity (in case there would be multiple)
 order: 1

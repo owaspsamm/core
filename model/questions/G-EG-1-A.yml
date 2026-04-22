@@ -23,7 +23,7 @@ order: 1
 quality:
 - Training is repeatable, consistent, and available to anyone involved with software
   development lifecycle
-- Training includes relevant content from the latest OWASP Top 10 and includes concepts such
+- Training includes relevant content from the latest OWASP Top 10 and covers concepts such
   as Least Privilege, Defense-in-Depth, Fail Secure (Safe), Complete Mediation, Session
   Management, Open Design, and Psychological Acceptability
 - Training requires a sign-off or an acknowledgement from attendees
