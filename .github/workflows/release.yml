@@ -7,6 +7,9 @@ on:
       - closed
 jobs:
   release:
+    outputs:
+      BRANCH_NAME: ${{ steps.releaseInfo.outputs.BRANCH_NAME }}
+      RELEASE_VERSION: ${{ steps.releaseInfo.outputs.RELEASE_VERSION }}
     name: Publish new release
     runs-on: ubuntu-latest
     if: github.event.pull_request.merged == true     # only merged pull requests must trigger this job
@@ -38,6 +41,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - uses: ncipollo/release-action@v1
         with:
+          commit: main
           artifacts: samm.tar.gz, SAMM_spreadsheet.xlsx
           tag: ${{ env.RELEASE_VERSION }}
           token: ${{ secrets.GITHUB_TOKEN }}
@@ -53,3 +57,17 @@ jobs:
           body: |
             This PR merges the main branch back into develop.
             This happens to ensure that the updates that happened on the release branch, i.e. CHANGELOG and manifest updates are also present on the develop branch.
+      - name: Passing release information for next job
+        id: releaseInfo
+        env:
+          BRANCH_NAME: "${{ github.event.pull_request.head.ref }}"
+        run: |
+            echo "BRANCH_NAME=$BRANCH_NAME" >> "$GITHUB_OUTPUT"
+            echo "RELEASE_VERSION=$RELEASE_VERSION" >> "$GITHUB_OUTPUT"
+  generate-markdown-build-website:
+    needs: release
+    uses: owaspsamm/core/.github/workflows/yaml-process.yml@7cdf8a9a0cc583bfe597a11ff5b2de44960a4575
+    secrets: inherit
+    with:
+      release: ${{ needs.release.outputs.BRANCH_NAME }}
+      release_name: ${{ needs.release.outputs.RELEASE_VERSION }}

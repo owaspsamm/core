@@ -12,6 +12,18 @@ on:
         description: 'Generate Web Markdown for this SAMM release'
         required: true
         type: string
+  workflow_call:
+    inputs:
+      release:
+        required: true
+        type: string
+      release_name:
+        required: true
+        type: string
+      external_call:
+        default: true
+        required: false
+        type: boolean
 jobs:
   lintModelv20:
     runs-on: ubuntu-latest
@@ -24,8 +36,8 @@ jobs:
     runs-on: ubuntu-latest
     needs: lintModelv20
     steps:
-      - name: 'Checkout using release is workflow dispatched'
-        if: github.event_name == 'workflow_dispatch'
+      - name: 'Checkout using release is workflow dispatched or workflow call (reused from other workflow)'
+        if: github.event_name == 'workflow_dispatch' || inputs.external_call
         uses: actions/checkout@v3
         with:
           ref: ${{ inputs.release }}
@@ -42,6 +54,10 @@ jobs:
         if: github.event_name == 'workflow_dispatch'
         run: |
           echo "release_name=${{ inputs.release }}" >> $GITHUB_ENV
+      - name: 'Checkout using release is workflow call (reused from other workflow)'
+        if: inputs.external_call
+        run: |
+          echo "release_name=${{ inputs.release_name }}" >> $GITHUB_ENV
       - name: 'Create output dir and copy files to override spaces in directories'
         run: |
           mkdir output
@@ -66,14 +82,26 @@ jobs:
           SQUASH_HISTORY: true
   # after changing something, we need to trigger the website build
   trigger-website-build:
-    if: github.event_name == 'push' && github.ref_type == 'tag'
+    if: (github.event_name == 'push' && github.ref_type == 'tag') || inputs.external_call || github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
     needs: generate-markdown
     steps:
+      - name: 'Decide if version comes from push'
+        if: github.event_name == 'push'
+        run: |
+          echo "release_name=${{ github.ref_name }}" >> $GITHUB_ENV
+      - name: 'Decide if version comes from workflow dispatch'
+        if: github.event_name == 'workflow_dispatch'
+        run: |
+          echo "release_name=${{ inputs.release }}" >> $GITHUB_ENV
+      - name: 'Decide if version comes from release (workflow call)'
+        if: inputs.external_call
+        run: |
+          echo "release_name=${{ inputs.release_name }}" >> $GITHUB_ENV
       - name: Trigger Website Dispatch
         uses: peter-evans/repository-dispatch@v2
         with:
           token: ${{ secrets.OWASP_SAMM_WEBSITE_TOKEN }}
           repository: owaspsamm/website
           event-type: samm-core-released
-          client-payload: '{"release": "${{ github.ref_name }}"}'
+          client-payload: '{"release": "${{ env.release_name }}"}'

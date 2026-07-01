@@ -43,6 +43,10 @@ notes:
 
 #References to other activities that are prerequisites to implement this one.
 relatedActivities:
+- 91086153b98b46928e36dd031b27bdc2   #D-SR-1-A
+- 6e7a618abd564df5bb784ca54893bbee   #G-PC-1-A
+- 852c76292e8a41de92205b31cb3f4e49   #G-PC-1-B
+- 93dff7be5f954f8d87d24f4261002508   #I-DM-1-A
 
 #Type Classification of the Document
 type: Activity

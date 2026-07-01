@@ -27,7 +27,7 @@ longDescription: |
 
   Document detailed incident response procedures and keep them up to date. Automate procedures where appropriate. Keep all resources necessary for these procedures (e.g., separate communicating infrastructure or reliable external location) ready to use. Detect and correct unavailability of these resources in a timely manner.
 
-  Carry out incident and emergency exercises are regularly. Use the results for process improvement.
+  Carry out incident and emergency exercises regularly. Use the results for process improvement.
 
   Define, gather, evaluate, and act upon metrics on the incident response process, including its continuous improvement.
 

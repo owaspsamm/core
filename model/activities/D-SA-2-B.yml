@@ -24,7 +24,7 @@ shortDescription: Standardize technologies and frameworks to be used throughout 
 
 #A multi-paragraph description of the activity
 longDescription: |
-  Identify commonly used technologies, frameworks and tools in use across software projects in the organization, whereby you focus on capturing the high-level technologies.
+  Identify commonly used technologies, frameworks, and tools in use across software projects in the organization, focusing on capturing the high-level technologies.
 
   Create a list and share it across the development organization as recommended technologies. When selecting them, consider incident history, track record for responding to vulnerabilities, appropriateness of functionality for the organization, excessive complexity in usage of the third-party component, and sufficient knowledge within the organization.
 
@@ -46,5 +46,6 @@ notes:
 
 #References to other activities that are prerequisites to implement this one.
 relatedActivities:
+
 #Type Classification of the Document
 type: Activity

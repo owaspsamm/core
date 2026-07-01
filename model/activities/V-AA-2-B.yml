@@ -23,7 +23,7 @@ shortDescription: Analyze the architecture for known threats.
 
 #A multi-paragraph description of the activity
 longDescription: |
-  Systematically review each threat identified during the Threat Assessment activities and examine how the architecture mitigates them. Use a standardised process for analyzing system architectures and the flow of data within them. This is typically linked to the threat model used (e.g. STRIDE) in order to identify the relevant security objectives which address each type of threat. For each threat, identify the design-level features of the architecture which counter it and assess their effectiveness in doing so.
+  Systematically review each threat identified during the Threat Assessment activities and examine how the architecture mitigates them. Use a standardized process for analyzing system architectures and the flow of data within them. This is typically linked to the threat model used (e.g. STRIDE) in order to identify the relevant security objectives which address each type of threat. For each threat, identify the design-level features of the architecture which counter it and assess their effectiveness in doing so.
 
   Where available, review architectural decision records to understand the architectural constraints and tradeoffs made during design. Take their impact into consideration along with any security assumptions on which the safe operation of the system relies and re-evaluate them.
 
@@ -45,5 +45,7 @@ notes:
 
 #References to other activities that are prerequisites to implement this one.
 relatedActivities:
+- 1ceadbb5a0024e2599821e7ce756f3a4   #D-TA-1-B
+
 #Type Classification of the Document
 type: Activity

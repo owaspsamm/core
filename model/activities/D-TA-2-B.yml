@@ -27,7 +27,7 @@ shortDescription: Standardize threat modeling training, processes, and tools to 
 longDescription: |
   Use a standardized threat modeling methodology for your organization and align this on your application risk levels. Think about ways to support the scaling of threat modeling throughout the organization.
 
-  Train your architects, security champions, and other stakeholders on how to do practical threat modeling.  Threat modeling requires understanding, clear playbooks and templates, organization-specific examples, and experience, which is hard to automate.
+  Train your architects, security champions, and other stakeholders on how to do practical threat modeling. Threat modeling requires understanding, clear playbooks and templates, organization-specific examples, and experience, which is hard to automate.
 
   Your threat modeling methodology includes at least diagramming, threat identification, design flaw mitigations, and how to validate your threat model artifacts. Your threat model diagram allows a detailed understanding of the environment and the mechanics of the application. You discover threats to your application with checklists, such as STRIDE or more organization-specific threats. For identified design flaws (ranked according to risk for your organization), you add mitigating controls to support stakeholders in dealing with particular threats. Define what triggers updating a threat model, for example, a technology change or deployment of an application in a new environment.
 
@@ -49,7 +49,8 @@ personnel:
 notes:
 
 #References to other activities that are prerequisites to implement this one.
-relatedActivities:
+relatedActivities: 
+- 93dff7be5f954f8d87d24f4261002508   #I-DM-1-A
 
 #Type Classification of the Document
 type: Activity

@@ -23,7 +23,7 @@ order: 1
 quality:
 - You document each metric, including a description of the sources, measurement coverage,
   and guidance on how to use it to explain application security trends
-- Metrics include measures of efforts, results, and the environment measurement categories
+- Metrics include measures of effort, results, and environment measurement categories
 - Most of the metrics are frequently measured, easy or inexpensive to gather, and
   expressed as a cardinal number or a percentage
 - Application security and development teams publish metrics

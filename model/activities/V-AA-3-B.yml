@@ -24,7 +24,7 @@ shortDescription: Feed the architecture review results back into the enterprise 
 
 #A multi-paragraph description of the activity
 longDescription: |
-  As an organization, you can further improve your software security posture by understanding which threats remain unaddressed in the software architectures and adapting your tactics to prevent this. Formalize a process to use recurring architecture findings as a trigger to identify the causes of gaps in the security assessment and deal with them. Feed findings back to the Design phase by creating, or updating relevant reference architectures, existing security solutions, or organisation design principles and patterns.
+  As an organization, you can further improve your software security posture by understanding which threats remain unaddressed in the software architectures and adapting your tactics to prevent this. Formalize a process to use recurring architecture findings as a trigger to identify the causes of gaps in the security assessment and deal with them. Feed findings back to the Design phase by creating, or updating relevant reference architectures, existing security solutions, or organization design principles and patterns.
 
 #The output of this particular activity
 results:
@@ -42,6 +42,7 @@ notes:
 
 #References to other activities that are prerequisites to implement this one.
 relatedActivities:
+- aa962032982a4d53bd34cd8771558df1   #D-SA-3-A
 
 #Type Classification of the Document
 type: Activity

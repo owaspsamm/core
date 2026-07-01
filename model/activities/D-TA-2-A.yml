@@ -13,7 +13,7 @@ level: e5b6dc4f907c4986b8ba7923303cd665
 id: 529d528265c94447954a57f5be425f54
 
 #The title of this activity
-title: Inventorize risk profiles
+title: Inventory risk profiles
 
 #Describe the benefit that is achieved by implementing this activity
 benefit: Solid understanding of the risk level of your application portfolio
@@ -25,7 +25,7 @@ shortDescription: Understand the risk for all applications in the organization b
 longDescription: |
   The goal of this activity is to thoroughly understand the risk level of all applications within the organization, to focus the effort of your software assurance activities where it really matters.
 
-  From a risk evaluation perspective, the basic set of questions is not enough to thoroughly evaluate the risk of all applications. Create an extensive and standardized way to evaluate the risk of the application, among others via their impact on information security (confidentiality, integrity and availability of data). Next to security, you also want to evaluate the privacy risk of the application. Understand the data that the application processes and what potential privacy violations are relevant. Finally, study the impact that this application has on other applications within the organization (e.g., the application might be modifying data that was considered read-only in another context). Evaluate all applications within the organization, including all existing and legacy ones.
+  From a risk evaluation perspective, the basic set of questions is not enough to thoroughly evaluate the risk of all applications. Create an extensive and standardized way to evaluate the risk of the application, including through their impact on information security (confidentiality, integrity, and availability of data). In addition to security, you also want to evaluate the privacy risk of the application. Understand the data that the application processes and what potential privacy violations are relevant. Finally, study the impact that this application has on other applications within the organization (e.g., the application might be modifying data that was considered read-only in another context). Evaluate all applications within the organization, including all existing and legacy ones.
 
   Leverage business impact analysis to quantify and classify application risk. A simple qualitative scheme (such as high/medium/low) is not enough to effectively manage and compare applications on an enterprise-wide level.
 
@@ -46,6 +46,8 @@ personnel:
 notes:
 
 #References to other activities that are prerequisites to implement this one.
-relatedActivities:
+relatedActivities: 
+- ef0b56870b734b13868697017a9b605e   #G-SM-1-A
+
 #Type Classification of the Document
 type: Activity

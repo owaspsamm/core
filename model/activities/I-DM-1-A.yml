@@ -33,7 +33,7 @@ longDescription: |
 
   Foster a culture of transparency and avoid blaming any teams for introducing or identifying security defects. Record and track all security defects in a defined location. This location doesn't necessarily have to be centralized for the whole organization, however ensure that you're able to get an overview of all defects affecting a particular application at any single point in time. Define and apply access rules for the tracked security defects to mitigate the risk of leakage and abuse of this information.
 
-  Introduce at least rudimentary qualitative classificiation of security defects so that you are able to prioritize fixing efforts accordingly. Strive for limiting duplication of information and presence of false positives to increase the trustworthiness of the process.
+  Introduce at least rudimentary qualitative classification of security defects so that you are able to prioritize fixing efforts accordingly. Strive for limiting duplication of information and presence of false positives to increase the trustworthiness of the process.
 
 #The output of this particular activity
 results:
@@ -58,7 +58,6 @@ notes: None
 
 #References to other activities that are prerequisites to implement this one.
 relatedActivities:
-- 921ff24f0b9f4df9a5129aa2f8a4a570   #V-ST-1-A
-- b3b20a75740c4880a21ad9aa0c1298c7   #V-ST-1-B
+
 #Type Classification of the Document
 type: Activity

@@ -21,7 +21,7 @@ order: 1
 #Qualifying Criterion
 quality:
 - You capture the risk appetite of your organization's executive leadership
-- The organization's leadership vet and approve the set of risks
+- The organization's leadership vets and approves the set of risks
 - You identify the main business and technical threats to your assets and data
 - You document risks and store them in an accessible location
 
