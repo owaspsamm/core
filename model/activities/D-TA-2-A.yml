@@ -46,7 +46,7 @@ personnel:
 notes:
 
 #References to other activities that are prerequisites to implement this one.
-relatedActivities: 
+relatedActivities:
 - ef0b56870b734b13868697017a9b605e   #G-SM-1-A
 
 #Type Classification of the Document
