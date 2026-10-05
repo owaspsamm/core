@@ -1,0 +1,40 @@
+---
+# ===========================================================
+# OWASP SAMM AI-Assisted Development Guidance (stream level)
+# ===========================================================
+stream: c404aa4f711e4f4e9e71faea22f7fb5c
+
+name: Policy and Standards
+
+overview: |
+  At the policy level, the organization needs new high-level positions stating how AI may be used in development and under which conditions. At the standards level, these policies, as well as existing ones, must be translated into concrete, technology-specific rules that guide not only people but also AI coding assistants and agents. Agent instruction files (e.g., AGENTS.md, CLAUDE.md, .github/copilot-instructions.md, Cursor rules) therefore become part of the distribution surface for standards, next to wikis, documents, and training.
+
+  AI tools may ignore, misinterpret, or be manipulated into overriding them. This makes the existing practice of translating policies and standards into test scripts and run-books even more important. The organization needs ways to verify key policy requirements, independently of whether the AI followed its instructions. Ideally this verification is deterministic, for example through static analysis rules, policy-as-code checks, automated tests, or tool permission configurations, so that it produces the same result every time and cannot be talked out of a finding. Verification that itself relies on AI can complement, but not replace, deterministic checks.
+
+#Guidance per maturity level, linked to the core activities of this stream
+levels:
+  1:
+    activity: 6e7a618abd564df5bb784ca54893bbee   #G-PC-1-A Define policies and standards
+    guidance: |
+      Extend the policy library with explicit positions on AI-assisted development, consistent with the AI risk appetite and strategy. At a minimum, cover:
+      * Acceptable use of AI coding assistants and agents: which development activities and application risk profiles they may be used for, which data and source code may be shared with which providers, and what autonomy agents may have (e.g., read-only, propose changes, commit, run commands, access environments).
+      * License and intellectual property posture on AI-generated code: whether and how generated code may be included in products, how the risk of reproducing licensed code is handled, and whether AI involvement must be disclosed.
+      * Approved tools: only approved AI tools and integrations may be used in development, and unapproved tools are treated as unauthorized software.
+
+      Derive standards from these policies. For example, the approved tools policy translates into a standard containing the maintained list of approved AI coding agents, models, IDE plugins, MCP servers, and other tool integrations, including their permitted configuration and permissions. Standards may also need to cover other AI-specific topics, such as handling of AI-suggested dependencies and secure configuration of agent harnesses.
+  2:
+    activity: 09f4b814a3444b329a7c9c7f54152ffe   #G-PC-2-A Develop test procedures
+    guidance: |
+      Prepare the test scripts and run-books for interpretation by AI tools as well as by development teams. Where teams were previously briefed on key policies, now also capture them in AI-consumable formats, such as agent instruction files (e.g., AGENTS.md, CLAUDE.md, .github/copilot-instructions.md, Cursor rules) and prompts. Publish these in a central location where teams can easily find them and add them to their projects. Version them with change logs, link each rule to its source policy, and protect them with adequate change control, since tampered instructions silently weaken every change an AI tool produces.
+
+      Structure the AI-consumable formats in two layers. The policy layer states what must be done (e.g., protect against injection attacks). The standard layer states how to do it for a specific technology or development methodology (e.g., which query APIs to use and which constructs are forbidden for a given stack). Teams would typically use the standard layer that matches their technologies.
+
+      For each rule, define how compliance is verified independently of the AI tool, preferably deterministically (e.g., static analysis rules, policy-as-code, automated tests, pipeline gates). AI tools may use these checks on their own output, but this does not replace independent verification.
+  3:
+    activity: fe7afe5fc04742bcbe476d4ba37d8091   #G-PC-3-A Measure compliance to policies and standards
+    guidance: |
+      Use AI tools to build and maintain the automated procedures that generate compliance reports. AI tools can help map each policy and standard requirement to existing evidence (e.g., code, test results, static analysis findings), write the scripts or policy-as-code rules that collect this evidence for every application version, and identify requirements that have no automated check yet. Ensure the resulting procedures are deterministic and do not depend on AI interpretation at reporting time.
+
+      Where AI tools assess compliance directly, keep in mind that their conclusions are sensitive to how they are asked: a prompt to "find gaps" tends to produce gaps, while a prompt to "confirm compliance" tends to produce reassurance. Use neutral instructions and define explicit pass/fail criteria per requirement, require a verdict with cited evidence for each one, and validate the setup against samples with known compliance status. A gap must be unambiguous, not a matter of interpretation.
+
+      AI tools can also summarize compliance status per team or application and create reports for stakeholders identifying areas for improvement. Ensure every statement in these summaries is traceable to the underlying verdicts and evidence.

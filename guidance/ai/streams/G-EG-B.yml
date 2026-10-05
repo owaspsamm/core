@@ -1,0 +1,24 @@
+---
+# ===========================================================
+# OWASP SAMM AI-Assisted Development Guidance (stream level)
+# ===========================================================
+stream: 0e2c4c5620e24d7d8e979020ca414182
+
+name: Organization and Culture
+
+overview: |
+  AI tools and practices evolve faster than central teams can follow alone. The existing organizational structures, such as Security Champions, the Secure Software Center of Excellence, and the security community, are well suited to spread secure AI-assisted development practices and to collect feedback on what works.
+
+levels:
+  1:
+    activity: ebd3782abc4343509981c52192904a42   #G-EG-1-B Identify security champions
+    guidance: |
+      Security Champions embed security knowledge into the team's AI tools. They do this together with the developers, keeping them in the loop on what is added and why. Together, they create and maintain the deterministic guardrails (e.g., static analysis rules) that ensure AI-generated code meets the organization's security standards.
+  2:
+    activity: d61764610f8741de894c1751f5c041ae   #G-EG-2-B Implement centers of excellence
+    guidance: |
+      Have the Secure Software Center of Excellence define best practices for AI-assisted development, such as reference configurations for approved AI tools, shared agent instruction files, and guardrail rulesets. It helps evaluate new AI tools and integrations for both security and compatibility with how teams develop. Product Champions assist teams in adopting the approved AI tools and guardrails, and the practices of teams that use AI effectively and securely are replicated to other teams.
+  3:
+    activity: a3720e84d6a24a8ba235c25ce6afc5c7   #G-EG-3-B Establish a security community
+    guidance: |
+      Use the security community and portal to share effective practices for AI-assisted development, such as instruction files and guardrail rules. Use the portal as the central location for the organization's AI-consumable standards (see Policy and Standards).

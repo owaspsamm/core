@@ -1,0 +1,37 @@
+---
+# ===========================================================
+# OWASP SAMM AI-Assisted Development Guidance (stream level)
+# ===========================================================
+
+stream: 94bb47791e3d462cbf5f71ebb1a1327a
+
+name: Create and Promote
+
+overview: |
+  AI-assisted development changes both the risk landscape and the opportunities an application security program must address. Code, tests, configuration, and infrastructure definitions may be produced by AI assistants, autonomous coding agents, or other generators, at a volume and speed that existing processes were not designed for. The organization's strategy must be explicit about the use of AI. It should at least cover where AI is allowed to be used in the software development process. It should also specify the guardrails required for every permitted AI. Finally there should a feedback loop in place to measure which strategic AI decisions are working and which are not.
+
+levels:
+  1:
+    activity: ef0b56870b734b13868697017a9b605e   #G-SM-1-A Identify the organization's risk appetite
+    guidance: |
+      Extend the risk appetite discussion with executive leadership to cover AI-assisted development explicitly. Identify the main AI-related risks for the organization, such as disclosure of source code, secrets, or personal data to AI providers; insecure or unmaintainable generated code; hallucinated or malicious dependencies suggested by AI tools; autonomous agents acting with excessive privileges on repositories, pipelines, or environments; intellectual property and licensing uncertainty of generated code; and regulatory obligations related to AI. Also capture the opportunities, such as faster remediation, broader test coverage, and AI-supported security review.
+
+      Document where leadership draws the line. Typical decisions include which application risk profiles may use AI assistance, which data may be shared with which AI providers, and what level of autonomy is acceptable (e.g., suggestions only, AI-generated changes subject to review, or agents that act independently). Make clear that accountability for software remains with the organization and its teams regardless of what generated the code.
+
+      Publish the resulting AI risk appetite alongside the other risk factors so that development teams know what is allowed before they adopt AI tools, rather than discovering the boundaries afterwards.
+  2:
+    activity: c1778728d66e4b83b59a42405a90598a   #G-SM-2-A Define the security strategy
+    guidance: |
+      Include AI-assisted development as an explicit theme in the application security strategy and roadmap. Define the target state for the planning horizon: which AI tools and models are sanctioned, which autonomy levels are allowed for which application risk classes, and which guardrails must be in place before autonomy is extended.
+
+      For every permitted AI use, define the required guardrails (e.g., mandatory independent review, automated security checks, restricted permissions for agents, approved data flows) and how the organization verifies that they are actually applied. Define upfront which signals will show whether each strategic AI decision is working, and connect them to the metrics in the Measure and Improve stream so that the strategy has a built-in feedback loop.
+
+      Plan the supporting initiatives as roadmap milestones. These typically include establishing a list of approved AI tools and providers, translating security standards into a form that AI code generation tools and agent harnesses can consume (e.g., shared instruction files, rules, and policies), scaling automated security verification to keep pace with the increased volume of change, adapting training, and tracking the provenance of AI-generated artifacts.
+
+      Balance the expected productivity gains against verification capacity. When the rate of change grows faster than the organization's ability to verify it, risk accumulates silently. Offer sanctioned, well-configured AI tools to development teams early in the roadmap to reduce the use of unsanctioned tools, and obtain buy-in from development teams on the guardrails.
+  3:
+    activity: e092ac0ccb8c4fccb6cd662f974dc107   #G-SM-3-A Align security and business strategies
+    guidance: |
+      AI capabilities, tools, and the related threat landscape change considerably faster than most other technologies. Review the AI aspects of the strategy more frequently than the annual cycle where needed, and re-evaluate the AI risk appetite whenever the organization's business strategy for AI, available tool capabilities, or applicable regulation changes significantly.
+
+      Evaluate each milestone that extends AI usage or autonomy before proceeding to the next one. Assess not only security outcomes but also cultural effects, such as erosion of in-depth system knowledge within teams, unclear ownership of generated code, or pressure to bypass verification to retain speed. Adjust the roadmap when the evidence shows that guardrails lag behind adoption.

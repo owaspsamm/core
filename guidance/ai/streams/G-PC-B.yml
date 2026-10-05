@@ -1,0 +1,25 @@
+---
+# ===========================================================
+# OWASP SAMM AI-Assisted Development Guidance (stream level)
+# ===========================================================
+stream: 2919e1f19aec4f018da94a3e8733f37d
+
+name: Compliance Management
+
+overview: |
+  The use of AI in development introduces new external compliance obligations, most notably AI-specific regulation. Once identified, these obligations are handled in the same way as described for the Policy and Standards stream: translated into requirements and test scripts.
+
+levels:
+  1:
+    activity: 852c76292e8a41de92205b31cb3f4e49   #G-PC-1-B Identify compliance requirements
+    guidance: |
+      Include AI regulation in the list of compliance requirements, for example the EU AI Act, including its AI literacy obligations for staff using AI systems. 
+      Revisit existing obligations and controls in place to meet them, as AI-assisted development changes how they apply. For example, under data protection regulation such as GDPR, AI providers may become processors or sub-processors, and personal data may reach them through new channels such as prompts, code context, test data, or agents accessing environments.
+  2:
+    activity: 38932fe4024e4ec89646a82e0b4e651e   #G-PC-2-B Standardize policy and compliance requirements
+    guidance: |
+      Include compliance-specific requirements and test scripts in the AI-consumable formats published for the Policy and Standards stream, so that AI tools take them into account during development. Verify compliance independently of the AI tools, preferably deterministically.
+  3:
+    activity: e7ba346fabdc44beb47e2c67c14a6726   #G-PC-3-B Measure compliance to external requirements
+    guidance: |
+      Use AI tools to build automated procedures that measure and report compliance with external requirements, applying the same safeguards as for the Policy and Standards stream: deterministic procedures, neutral instructions, explicit pass/fail criteria, and verdicts traceable to evidence. As AI regulation evolves quickly, re-assess applicable AI-related obligations more frequently than other compliance drivers.
