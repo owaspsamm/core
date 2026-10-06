@@ -1,0 +1,33 @@
+---
+# ===========================================================
+# OWASP SAMM AI-Assisted Development Guidance (stream level)
+# ===========================================================
+stream: 253b012094cf4e0988e08fd22609227d
+
+name: Architecture Design
+
+overview: |
+  AI tools that write code are notorious for causing architectural drift. In other words, they tend to ignore the architectural context and either come up with new architectural patterns or generated functionality without any meaningful architecture as a backbone. To counter this, at the very least the organization's security principles, preferred security solutions, and reference architectures need to be available in a format that AI tools can consume.
+
+levels:
+  1:
+    activity: 27bb61f3c6344359b021caeaef5ab07e   #D-SA-1-A Adhere to basic security principles
+    guidance: |
+      Make the security principles available to AI tools in a form they can relate to. AI tools are poor at translating abstract principles into concrete code on their own, so pair each principle with how it materializes in the codebase . For instance, rather than only stating "apply proper sanitization and output encoding", state that user-provided content is stored as-is in the database and encoded at output, except for rich text editor content, which is sanitized, and point to where this is done in the code. Include these principles in the agent instruction files.
+  2:
+    activity: 9b6a86278ba14a9098d3d60a9a78d6c5   #D-SA-2-A Provide preferred security solutions
+    guidance: |
+      Describe the shared security services and design patterns in an AI-consumable format: what each one is for, when to use it, and how to integrate with it, including concrete examples. Explicitly instruct AI tools to use these solutions instead of implementing their own security functionality, such as authentication, authorization, or cryptography. 
+      
+      More importantly, focus on creating deterministic guardrails that reliably detect re-implementations of functionality covered by the shared solutions.
+  3:
+    activity: aa962032982a4d53bd34cd8771558df1   #D-SA-3-A Build reference architectures
+    guidance: |
+      Make reference architectures available to AI tools in an AI-consumable format. Note that an architecture is much more than a structure of where code lives (e.g., services in one folder, entities in another). Architecture covers components, dependencies, data flows, security controls etc. Capturing all of this in a form AI tools reliably follow is still an open challenge.
+
+      Therefore, focus on detecting when AI-generated changes break out of the reference architectures and reusable services, using a combination of measures:
+      * Code quality metrics: assess every pull request on metrics such as cyclomatic complexity, coupling, cohesion, and duplication, against agreed thresholds. Degrading metrics are an early signal of architectural dilution. AI can then be used to propose a solution that improves the metrics, which is reviewed like any other change.
+      * Static analysis rules: specify anti-patterns that break the architecture as rules, for example forbidden dependencies between layers or components, or bypassing a shared security service by accessing the underlying resource directly.
+      * Code review guidelines: give human reviewers explicit architectural review criteria, for example whether the change reuses existing components and services, introduces new patterns or components, or crosses component boundaries.
+
+      When AI tools repeatedly deviate from the reference architecture, treat this as input for improving the way reference architecture is made available to AI tools, or the rules above.

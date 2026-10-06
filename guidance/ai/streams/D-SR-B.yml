@@ -1,0 +1,34 @@
+---
+# ===========================================================
+# OWASP SAMM AI-Assisted Development Guidance (stream level)
+# ===========================================================
+stream: 8c1dcd10821f4f2baed52fdc83d93cf6
+
+name: Supplier Security
+
+overview: |
+  Suppliers increasingly use AI in their development, often without this being visible to their clients. This affects the organization in two ways. First, data shared with suppliers, such as source code, specifications, test data, or credentials, may end up in AI tools and with AI providers, effectively creating additional parties that process the organization's data. Second, AI-assisted development changes the quality profile of delivered software: more code is delivered faster, and it may contain insecure patterns, unnecessary complexity, hallucinated dependencies, or code with unclear licensing. The organization must therefore make supplier AI usage explicit, contractually bounded, and verified.
+
+levels:
+  1:
+    activity: 2b01696356ed4652accf093f6c6a47ee   #D-SR-1-B Perform vendor assessments
+    guidance: |
+      Add AI-related questions to the vendor assessment. For example:
+      * Does the supplier use AI tools in development, and which tools and providers?
+      * Which of the organization's data could reach these tools, and is it retained or used for training by the providers?
+      * Does the supplier have a policy on AI-assisted development, such as acceptable use and approved tools?
+      * How does the supplier verify AI-generated code before delivery, and how does it handle licensing of generated code?
+  2:
+    activity: 5d5e3d9beab9498ca1ce66d3a53a81c6   #D-SR-2-B Discuss security responsibilities with suppliers
+    guidance: |
+      Include AI-related responsibilities in supplier agreements, such as:
+      * Disclosure of AI use in development, and notification when it changes significantly.
+      * Restrictions on sharing the organization's data and code with AI tools, for example limiting it to approved providers that do not retain the data or use it for training.
+      * The supplier remains fully accountable for the security and quality of delivered software, regardless of whether it was produced with AI assistance.
+      * Warranties on intellectual property and licensing of AI-generated code.
+  3:
+    activity: a9f56795ac84426c9e45f9471e82a8d7   #D-SR-3-B Align security methodology with suppliers
+    guidance: |
+      Align AI-assisted development practices with key suppliers. Provide them with the organization's standards in AI-consumable formats (see Policy and Standards), and have their contributions pass the same deterministic guardrails and verification as internally developed AI-generated code, for example through shared pipelines.
+
+      Where suppliers cannot meet these expectations, strengthen verification at intake as a compensating control, for example through stricter static analysis, dependency analysis, architectural conformity checks, and review of high-risk components.

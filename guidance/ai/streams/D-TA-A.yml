@@ -1,0 +1,35 @@
+---
+# ===========================================================
+# OWASP SAMM AI-Assisted Development Guidance (stream level)
+# ===========================================================
+stream: 17c90203f8354c3594eea22759e375a9
+
+name: Application Risk Profile
+
+overview: |
+  Applications that contain AI functionality, such as LLM integrations, agents, or MCP servers, introduce risks that traditional risk profiles do not capture. In addition, AI tools can assist in performing risk assessments in various ways.
+
+levels:
+  1:
+    activity: c6da6525773644d0a18b3a927caf6dd2   #D-TA-1-A Perform application risk assessments
+    guidance: |
+      The basic risk assessment should explicitly take into account whether the application contains AI functionality, such as an LLM integration or an MCP server. Include in the risk profile the potential attack surface that this functionality may create. For instance, a read-only MCP server opens a much smaller attack surface than a full blown LLM integration with a write access.
+  2:
+    activity: 529d528265c94447954a57f5be425f54   #D-TA-2-A Inventory risk profiles
+    guidance: |
+      Extend the standardized risk evaluation with AI-specific risk factors for applications containing AI functionality, such as:
+      * Autonomy: whether the AI component can take actions (e.g., call tools, modify data, trigger transactions) or only produces output for people.
+      * Access: which data, tools, and other applications the AI component can reach, including through MCP or other integrations.
+      * Exposure to untrusted input: whether content from users or external sources reaches the model, enabling prompt injection.
+      * Use of output: whether AI output is used for decisions or processed by other systems without human verification.
+      * Data shared with AI providers, and dependency on third-party models.
+      * Regulatory classification of the AI functionality (see Compliance Management).
+      Record the AI components of each application (e.g., models, providers, exposed tools) in the risk profile inventory.
+
+      AI can assist risk owners with the risk assessment itself, while they remain responsible for its outcome:
+      * Exploring risk scenarios: AI can act as a sparring partner to develop a more thorough understanding of risk scenarios and their business impact. For example by surfacing dependencies between assets and business processes, and the cascading impact an incident may have through them.
+      * Quantifying risk: when a quantitative risk methodology is used (e.g., FAIR), AI can help structure estimates, perform the calculations, and analyze how sensitive the outcome is to individual assumptions. The input estimates and assumptions remain owned and documented by the risk owners.
+  3:
+    activity: 2f63f92c414546b58d035ece110d479f   #D-TA-3-A Periodic review of risk profiles
+    guidance: |
+      Review risk profiles of applications with AI functionality more frequently, as their risk can change without changes to the application's own code. Changes that should trigger a re-evaluation include a new model or provider, new tools or integrations available to the AI component, or increased autonomy.

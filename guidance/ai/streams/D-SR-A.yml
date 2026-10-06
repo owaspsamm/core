@@ -1,0 +1,24 @@
+---
+# ===========================================================
+# OWASP SAMM AI-Assisted Development Guidance (stream level)
+# ===========================================================
+stream: 7fb68bc660774b9080963c17761529a2
+
+name: Software Requirements
+
+overview: |
+  Requirements elicitation remains a human activity: people specify the functionality that needs to be developed. AI can assist by augmenting functional requirements with security requirements, so that security is in the driver's seat from the start rather than an afterthought. This matters even more with AI-assisted development, as requirements and user stories become direct input for AI coding tools. Security requirements have to be explicit.
+
+levels:
+  1:
+    activity: 91086153b98b46928e36dd031b27bdc2   #D-SR-1-A Identify security requirements
+    guidance: |
+      When reviewing functional requirements, the team can ask an AI assistant on a best-effort basis how the functionality could be misused and which high-level security objectives apply. The team keeps the suggestions that are specific and relevant to the application.
+  2:
+    activity: 1cc77725cb2349f394477838668f6184   #D-SR-2-A Standardize and integrate security requirements
+    guidance: |
+      Make AI assistance a systematic part of backlog refinement and sprint planning from a security requirements perspective. Provide the AI with the organization's sources of security requirements, such as policies and standards, the application risk profile, and known security defects, so that it consistently brings the relevant security requirements in as regular requirements.
+  3:
+    activity: ce13df2e0dfb455588bf75135f1a718e   #D-SR-3-A Develop a security requirements framework
+    guidance: |
+      Use AI to help create and maintain the security requirements framework, derived from standards such as OWASP ASVS and MASVS and customized for specific components, applications, or the portfolio. Include the organizational policies and standards as an input as well. AI can help tailor requirements to the technologies in use and keep the framework aligned with new versions of the underlying standards.

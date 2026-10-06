@@ -1,0 +1,24 @@
+---
+# ===========================================================
+# OWASP SAMM AI-Assisted Development Guidance (stream level)
+# ===========================================================
+stream: 79754453c74b4143b20a57d0efdaab56
+
+name: Technology Management
+
+overview: |
+  AI affects technology management in two ways. First, AI development tools (e.g., coding agents, models, IDE plugins, MCP servers) are themselves technologies that need to be identified, evaluated, and managed like any other development tooling. Second, AI tools take the path of least resistance even more than people do: they readily introduce new frameworks and libraries into an application, which may be outdated, unmaintained, or not recommended by the organization.
+
+levels:
+  1:
+    activity: 27cdd2a336a44e56a42632c7a78fcf4f   #D-SA-1-B Identify tools and technologies
+    guidance: |
+      Include the AI development tools and integrations used by the teams, as well as AI components used in the applications (e.g., models, providers, AI frameworks), in the identification of technologies. Evaluate them for their security quality, for example how they handle data, which permissions they require, and how trustworthy their source is.
+  2:
+    activity: 5e1dd310e28449058046c7af0fe46fce   #D-SA-2-B Promote preferred tools and technologies
+    guidance: |
+      Include AI development tools and integrations in the list of recommended technologies; this list forms the basis of the approved AI tools standard (see Policy and Standards). Make the list of recommended technologies available in an AI-consumable format, so that AI tools choose recommended frameworks and libraries by default. Review AI tools more frequently than other technologies, as they evolve quickly.
+  3:
+    activity: 3afce608ad7c42deb37a04d6b86e5c33   #D-SA-3-B Enforce the use of recommended technologies
+    guidance: |
+      Enforce the use of recommended technologies deterministically, for example by failing the build when a change introduces a framework or library that is not on the recommended list. Enforce the use of approved AI tools and their configuration through centrally managed settings where the tools support it (e.g., allowed MCP servers and permissions), and detect the use of unapproved AI tools.
