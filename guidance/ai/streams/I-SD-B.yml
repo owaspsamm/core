@@ -1,0 +1,24 @@
+---
+# ===========================================================
+# OWASP SAMM AI-Assisted Development Guidance (stream level)
+# ===========================================================
+stream: 9a5f26d77f204467bdda7ffa09109d73
+
+name: Secret Management
+
+overview: |
+  AI does not change how secrets should be managed, but it massively increases the risk of getting it wrong. AI tools read files, process context, and execute commands, and anything they can access may be sent to an AI provider. Least privilege principle is key here and AI tools should be treated as potentially malicious from the secrets management perspective. At the same time, AI can help find secrets where they should not be and keep the inventory of secrets clean.
+
+levels:
+  1:
+    activity: 77a5f467ffe140e2a2839bb522e82c4e   #I-SD-1-B Protect application secrets in configuration and code
+    guidance: |
+      Handle AI tools as a potential attacker. AI tools must never have access to secrets other than development-grade secrets, whether through code, configuration files, environment variables, or prompts. Secrets pasted in prompts should be considered as compromised.
+  2:
+    activity: 4729b4bd6dca4d58a68cb854ad4409a6   #I-SD-2-B Include application secrets during deployment
+    guidance: |
+      Use AI to complement static secret detection tools. Such tools may lack context and produce false positives. AI tools that have access to the codebase may provide a more precise guidance and whether it is sensitive. This is even more important for the local secrets detection as developers may keep production-grade secrets on their machines that are not checked-in into the repository. If AI tools are already running on such a machine, AI already has access to them. So use AI to find such secrets and raise the alarm. Treat every production secret found this way as compromised, and rotate it.
+  3:
+    activity: fed0d75c064c4a979a5b7b98adfdedbf   #I-SD-3-B Enforce lifecycle management of application secrets
+    guidance: |
+      Lifecycle management of secrets remains an activity performed by people. AI can help create and maintain an inventory of secrets. Provide AI tools with the names and metadata of secrets only, never with their values.

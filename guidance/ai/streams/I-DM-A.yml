@@ -1,0 +1,30 @@
+---
+# ===========================================================
+# OWASP SAMM AI-Assisted Development Guidance (stream level)
+# ===========================================================
+stream: a5b57fc5fa0441b7b23f599b506c5752
+
+name: Defect Tracking
+
+overview: |
+  With AI-assisted development, defect management must make it possible to find out where and why AI tools got it wrong. This requires recording which defects were introduced through AI-generated changes, while keeping ownership of every defect clearly with people. AI can also assist with triaging defects and tracking SLAs.
+
+levels:
+  1:
+    activity: 93dff7be5f954f8d87d24f4261002508   #I-DM-1-A Track security defects centrally
+    guidance: |
+      Record for each security defect whether it was introduced through an AI-generated change, where the origin of changes is known (see Strategy and Metrics). This is the basis for analyzing where and why AI gets it wrong and allow focusing on prevention. Though given the non-deterministic nature of AI prevention might not always work.
+
+      Ensure every security defect has a clear owner, regardless of whether the defect was introduced through an AI-generated change. The team that accepted a change owns its defects, and an AI tool is never the owner of a defect, even when it is used to fix it.
+
+      AI can assist with triaging defects, for example by identifying duplicates and likely false positives. Treat its conclusions as proposals that people confirm.
+  2:
+    activity: 2bf0e192a904444b8a2f38c33256e80a   #I-DM-2-A Rate and track security defects
+    guidance: |
+      AI can assist in rating security defects. However keep in mind that AI is susceptible to suggestion, and context implying that a defect is less severe than it seems can lead to an underrated defect. Apply the rating methodology with explicit criteria, require the AI to justify its rating with evidence, and keep the final rating with people.
+
+      AI can help create dashboards and monitoring for tracking SLA compliance.
+  3:
+    activity: d955a7b3fbfc4b6aa5b327af9e01c377   #I-DM-3-A Enforce an SLA for defect management
+    guidance: |
+      AI can help build the automated SLA alerting and the integration of the defect management system with build, deployment, and monitoring tooling. Be careful with the autonomy AI gets over these tools. It is okay to let AI help create the integrations, but do not give AI tools the permissions to operate them, for example to change build or deployment outcomes or to sign off exceptions.

@@ -1,0 +1,26 @@
+---
+# ===========================================================
+# OWASP SAMM AI-Assisted Development Guidance (stream level)
+# ===========================================================
+stream: 8a870a9b26724b4ba0dff177028b474a
+
+name: Build Process
+
+overview: |
+  AI changes little about the build process itself. AI can help create build pipeline definitions, but AI tools should not have access to the build system, its secrets, or signing keys. The build is the place where the deterministic guardrails for AI-generated code become mandatory.
+
+levels:
+  1:
+    activity: bf536a9305134a769adbd414652054ee   #I-SB-1-A Define a consistent build process
+    guidance: |
+      AI can assist in proofreading the formal build process definition, for example to identify missing or ambiguous steps, and in suggesting hardening measures for the build tools in use.
+  2:
+    activity: bcc960e835aa4ad58a9d39a272cbf6f1   #I-SB-2-A Automate the build process
+    guidance: |
+      AI can assist in creating build pipeline definitions as well as suggesting hardening measures for the build tools in use. Do not give AI tools access to the build system, its secrets, or signing keys. Treat changes to pipeline definitions as security-sensitive: they require human review, also when proposed by an AI tool.
+  3:
+    activity: 281369f491da4d4c84b0729e344e2c93   #I-SB-3-A Enforce a security baseline during build
+    guidance: |
+      Add the deterministic guardrails for AI-generated code (e.g., custom static analysis rules, architectural rules, code quality metrics) to the automated security checks in the pipeline. 
+      
+      If the pipeline includes AI-based steps, such as automated AI code review, treat them as processing untrusted input, since pull requests may contain prompt injection. Run such steps without access to secrets or write permissions.

@@ -1,0 +1,24 @@
+---
+# ===========================================================
+# OWASP SAMM AI-Assisted Development Guidance (stream level)
+# ===========================================================
+stream: 9ec70d6f7ddb4cb6b37928f9994c6049
+
+name: Deployment Process
+
+overview: |
+  As with the build, AI changes little about the deployment process itself. AI can help define and automate deployments, but AI tools should not have access to production environments, deployment credentials, or the deployment system. Decisions in the deployment process, such as approvals and exceptions, remain with people.
+
+levels:
+  1:
+    activity: 994bcac2bb7c4cc59a0faa365a0b58a0   #I-SD-1-A Use a repeatable deployment process
+    guidance: |
+      AI can assist in proofreading the formal deployment process definition and in suggesting hardening measures for the deployment tools in use. The separation between development and production also applies to AI tools. AI tools used in development must not have access to the production environment.
+  2:
+    activity: 1f3a9306778f4539a437d9f19232cda7   #I-SD-2-A Automate deployment and integrate security checks
+    guidance: |
+      AI can assist in creating deployment pipeline definitions. Do not give AI tools access to the deployment system or its credentials. Treat changes to deployment pipeline definitions as security-sensitive.
+  3:
+    activity: 05a3e75c6c654ae58a115cbf4295662b   #I-SD-3-A Verify the integrity of deployment artifacts
+    guidance: |
+      AI doesn't change anything for this activity.

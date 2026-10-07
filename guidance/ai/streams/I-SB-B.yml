@@ -1,0 +1,28 @@
+---
+# ===========================================================
+# OWASP SAMM AI-Assisted Development Guidance (stream level)
+# ===========================================================
+stream: 2f7b501627954c6cb03342196b2065a7
+
+name: Software Dependencies
+
+overview: |
+  AI tools may suggest packages that do not exist. Attackers exploit this by publishing malicious packages under those names (so-called slopsquatting). AI tools may also suggest outdated versions, as their knowledge is limited to their training data. At the same time, AI offers clear opportunities for this practice: it can help keep dependencies lean, build and maintain the curated list of approved dependencies, and analyze third-party code for security issues.
+
+  Good practice is that no dependency enters an application only because an AI tool suggested it, while AI is used to make dependency management more thorough than manual effort alone allows.
+
+levels:
+  1:
+    activity: bed0489cae4e4401b1d44d56ad36c109   #I-SB-1-B Identify application dependencies
+    guidance: |
+      Verify every dependency suggested by an AI tool before adding it. Make sure the dependency is the intended one, it is maintained and included in an up-to-date version.
+  2:
+    activity: 857a43e335ba467598eca99d48ea0076   #I-SB-2-B Review application dependencies for security
+    guidance: |
+      Use AI to help detect and remove unnecessary dependencies. AI can also assist in creating and maintaining the curated list of approved dependencies. It can help flag dependencies that are risky, such as unmaintained packages or packages with suspicious recent changes.
+
+      Point the AI tools to the list with approved dependencies so that it is aware which ones should be used.
+  3:
+    activity: d09a731835304ea8aeb4c21565e45c4b   #I-SB-3-B Test application dependencies
+    guidance: |
+      Use AI to help analyze the code of third-party dependencies for vulnerabilities and malicious code, such as backdoors, complementing established analysis tools. This makes the in-depth verification of dependencies expected at this level feasible at a larger scale. Pay attention to the eagerness of AI tools to find something. They should be configured to look for something major rather than every possible vulnerability with unclear risk.

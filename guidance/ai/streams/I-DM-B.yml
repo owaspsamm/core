@@ -1,0 +1,28 @@
+---
+# ===========================================================
+# OWASP SAMM AI-Assisted Development Guidance (stream level)
+# ===========================================================
+stream: 55bf5184ff7d4b76a444e52a28c803d9
+
+name: Metrics and Feedback
+
+overview: |
+  When code is written with AI assistance, root cause analysis of security defects remains just as relevant. Whether the defect's root cause is coming from the context given to AI tools, the architecture, or the requirements specifications (or their absence) helps to improve and to prevent similar defects. This data should then feed into the AI-assisted AppSec strategy at the level of the team, the business unit, and even the organization.
+
+levels:
+  1:
+    activity: d1cb54f1ddd3432480513df320fc0ff8   #I-DM-1-B Define basic defect metrics
+    guidance: |
+      When periodically going over recorded security defects, make a best-effort attempt to identify the root cause of the most relevant ones. No formal categorization is needed at this level. Typical root causes in AI-assisted development include:
+      * Specifications: security requirements were missing, ambiguous, or not explicit.
+      * Architecture: the reference architecture or shared security solutions were missing, unclear, or not followed.
+      * Context: the AI tool lacked or misinterpreted relevant instructions, standards, or information about the codebase.
+      Where evident, also note why the defect was not caught earlier, such as a missing guardrail, test, or review. Derive quick wins from these insights, for example updating the agent instruction files, clarifying a security requirement, or adding a deterministic guardrail (e.g., a static analysis rule).
+  2:
+    activity: 15d73a64818c43019504c8d938ca2434   #I-DM-2-B Define advanced defect metrics
+    guidance: |
+      Add the root cause categories and the reasons defects were not caught earlier as dimensions of the unified metrics across the organization. This allows comparing, for example, time to resolve, regressions, and reopened defects between products, teams, or business units that use AI differently. Share the lessons learned across teams, including the resulting changes to instructions, specifications, and guardrails.
+  3:
+    activity: f2a309b82fbc46cfb2f11c9cde20dc0a   #I-DM-3-B Use metrics to improve the security strategy
+    guidance: |
+      Regularly evaluate whether the root cause metrics show where AI adds value and where it is a burden. Use these as input for the decisions in the AI-assisted AppSec strategy, such as investing in better context, architecture, or specifications, or extending or restricting AI use for certain applications, technologies, and/or teams.
