@@ -1,0 +1,26 @@
+---
+# ===========================================================
+# OWASP SAMM AI-Assisted Development Guidance (stream level)
+# ===========================================================
+stream: 102fdab651834273abd67a3ec27aab05
+
+name: Scalable Baseline
+
+overview: |
+  Teams are often overwhelmed by the sheer amount of findings produced by automated security testing tools. AI can help with triaging and understanding findings, and with fixing them, as long as people stay on top of the fixes. Most importantly, AI can help customize static analysis tools into deterministic guardrails, which is essential now that massive amounts of code are written by AI.
+
+levels:
+  1:
+    activity: 921ff24f0b9f4df9a5129aa2f8a4a570   #V-ST-1-A Perform automated security testing
+    guidance: |
+      Use AI to help triage the findings of automated security testing tools and to help development teams understand them, for example by explaining a finding in the context of their code. Be aware that AI is susceptible to suggestion and may dismiss true findings as false positives.
+
+      AI can also propose fixes for findings. Automated fixes by AI are a double-edged sword, as AI cannot guarantee a correct fix. People review every AI-proposed fix, and the fix is verified by re-running the tool and the relevant tests.
+  2:
+    activity: fb6f258a2e424ee9a919341758222a7a   #V-ST-2-A Develop application-specific security test cases
+    guidance: |
+      Use AI to help customize static analysis tools, for example by writing custom rules for the organization's technologies, frameworks, and standards, or by tuning rules to reduce false positives and false negatives. These custom rules are the deterministic guardrails that ensure AI-generated code meets the organization's security standards (see Policy and Standards). Validate each rule against code samples that should and should not trigger it before rolling it out.
+  3:
+    activity: 4f6a06796d0840debcc775ea1af65679   #V-ST-3-A Integrate security testing tools in the delivery pipeline
+    guidance: |
+      AI adds little to the integration of security testing tools into the delivery pipeline.

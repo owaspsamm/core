@@ -1,0 +1,26 @@
+---
+# ===========================================================
+# OWASP SAMM AI-Assisted Development Guidance (stream level)
+# ===========================================================
+stream: 8a64c7b0b35a458ea436260d5e414dfa
+
+name: Deep Understanding
+
+overview: |
+  In-depth security testing has always been limited by its cost: manual expert review is slow and hard to scale. This is where AI shines. AI is good at finding potential vulnerabilities at speed, making in-depth testing feasible for many more components and changes. Experts remain essential as they direct the AI with the right context, validate its findings, and judge their impact. Without that, AI-driven testing produces both missed issues and convincing false findings.
+
+levels:
+  1:
+    activity: b3b20a75740c4880a21ad9aa0c1298c7   #V-ST-1-B Test high risk application components manually
+    guidance: |
+      Use AI to perform in-depth security reviews of high-risk components, such as authentication, access control enforcement, session management, external interfaces, and input parsers. Provide the AI with the context it needs, such as the relevant requirements, the catalog of controls, and the threat model, and focus it on how the component handles untrusted input. A qualified reviewer directs the review, validates each finding, for example by reproducing it, and discards false positives before findings are triaged.
+  2:
+    activity: 346ed576f0a94147ba2b8148abc3c73a   #V-ST-2-B Establish a penetration testing process
+    guidance: |
+      Use AI to support penetration testing, for example by deriving application-specific test cases, exploring attack chains that combine several weaknesses, analyzing application responses, and writing proof-of-concept exploits. Penetration testers remain in control of the scope and the conclusions. Run AI-driven testing only against authorized targets and in non-production environments. Beware that AI testing agents may perform destructive actions.
+
+      Expect an increasing number of AI-generated reports in bug bounty programs, many of which are low quality. Define how such reports are triaged without overwhelming the team, for example by requiring a reproducible proof of concept.
+  3:
+    activity: a395d69917b947b28d5995738d716283   #V-ST-3-B Establish continuous, scalable security verification
+    guidance: |
+      Make the results of in-depth testing scale by translating recurring issue types into deterministic guardrails, such as custom static analysis rules, so that they are caught early and consistently from then on. Also feed them back into the context of AI coding tools, such as the agent instruction files, to prevent the issues from being introduced in the first place.

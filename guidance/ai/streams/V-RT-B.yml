@@ -1,0 +1,24 @@
+---
+# ===========================================================
+# OWASP SAMM AI-Assisted Development Guidance (stream level)
+# ===========================================================
+stream: 27a14a265c864eb790781cd1e2bf843b
+
+name: Misuse/Abuse Testing
+
+overview: |
+  Misuse and abuse testing is the counterpart of Control Verification: rather than confirming that controls work as intended, it tries to make them fail. AI can help write negative and abuse test cases and find choking points in the application, but only when given a meaningful description of the functionality under test.
+
+levels:
+  1:
+    activity: 81ef5625583646bf8bc3fad53e4eff55   #V-RT-1-B Perform fuzz testing
+    guidance: |
+      Use established fuzzing tools to generate and send the inputs, as they are far cheaper and faster at this than AI. Use AI where it adds value around them: identifying the main input parameters of the application, writing fuzzing harnesses and seed inputs, and triaging crashes for their security impact.
+  2:
+    activity: fd4d1ac720374b13a25ab1381045b731   #V-RT-2-B Define and run security abuse cases from requirements
+    guidance: |
+      Use AI to write negative test cases for the security requirements, as well as more elaborate abuse test cases for key features, such as business logic attacks. Simply asking AI to write abuse cases does not produce meaningful results: provide a description of the feature, its business rules, and the security requirements that apply, and review the resulting test cases for relevance.
+  3:
+    activity: d975bb1ce1dd4d61a6039b0a4a05926e   #V-RT-3-B Perform security stress testing
+    guidance: |
+      Stress testing is not only about network load, but about choking points in the application. Use AI to investigate the codebase for such choking points. Use AI to write test cases targeting these choking points, and to verify that rate limiting and other resource controls work as intended.

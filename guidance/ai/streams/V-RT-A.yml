@@ -1,0 +1,26 @@
+---
+# ===========================================================
+# OWASP SAMM AI-Assisted Development Guidance (stream level)
+# ===========================================================
+stream: efb5d1f275504173899da345ef5bbe8e
+
+name: Control Verification
+
+overview: |
+  Control verification is where AI can help substantially, as it makes writing and running security tests much cheaper. The maturity levels differ in rigour: AI is used ad hoc at the first level, systematically at the second, and at the third level as many security requirements as possible are translated into automated test cases. People remain responsible for defining what needs to be tested, and for checking that AI-generated tests verify the intended behavior rather than the implementation!
+
+levels:
+  1:
+    activity: 99989f86dabc4a7a87fbe6a274c99ca3   #V-RT-1-A Test the effectiveness of security controls
+    guidance: |
+      Use AI to verify that the standard security controls work correctly, for example authentication, access control, input validation, encoding, and encryption. People specify which standard security controls are in scope and what their expected behavior is.
+
+      The verification can be performed ad hoc, for example when the application changes its use of the controls, but each run should be well prepared. Provide the AI with the controls in scope and their expected behavior as context, and reuse the same prompts across runs, rather than just asking the AI to "verify that the standard security controls work correctly".
+  2:
+    activity: 9951bda24b624cc684a2851f9d56c5d8   #V-RT-2-A Define and run security test cases from requirements
+    guidance: |
+      Developers use AI to write unit and integration test cases derived from the security requirements, to automatically verify the correct working of the security controls. Review the generated tests for meaningful assertions, as AI-generated tests may confirm the implementation rather than the requirement.
+  3:
+    activity: 7003146cf1a1450293001754fe74787d   #V-RT-3-A Automate security requirements testing
+    guidance: |
+      Translate as many security requirements as possible into automated test cases, and include them in your build pipeline to run as a regression test suite for every run. Once again focus on making sure you are verifying the intent (i.e., the security requirements) and not the implementation.

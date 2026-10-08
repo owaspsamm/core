@@ -1,0 +1,26 @@
+---
+# ===========================================================
+# OWASP SAMM AI-Assisted Development Guidance (stream level)
+# ===========================================================
+stream: 77ca4b5e7ebc42558109829dffc2b80d
+
+name: Architecture Validation
+
+overview: |
+  Architecture assessment is where AI can be of substantial benefit. As systems evolve the dev team may start losing track of the entire scope of the project. AI can help create the complete picture in view. However AI needs proper context to do this well. AI also tends to report code-level issues as architectural problems. Teams also tend to use AI for a quick architectural analysis as a checkbox exercise. This may be acceptable at the first maturity level, but higher levels require teams to maintain a human-readable representation of the architecture: its components, their interactions, and the security controls. This representation is maintained by and for people, not for the sake of AI, and serves as the basis for AI-assisted reviews.
+
+levels:
+  1:
+    activity: 0f611af10f974da497e7f3defe0c4f12   #V-AA-1-A Assess application architecture
+    guidance: |
+      AI can perform an ad-hoc assessment of the architecture for the provision of general security mechanisms, based on the available architecture or design documents and the code. Review the findings and keep those that are actually architectural, rather than code-level issues.
+  2:
+    activity: eba4b86963f44fa59b0b9389a1cfc59b   #V-AA-2-A Verify the application architecture for security methodically
+    guidance: |
+      Regularly review whether the architecture provides the required security mechanisms, such as authentication, authorization, secure communication, data protection, and logging. To this end, create and maintain a catalog of security controls: which controls exist, which requirements they address, and in which architectural components and interfaces they are provided. The architecture and data flow diagrams from threat modeling are a natural starting point (see Threat Modeling).
+
+      Cataloging is a human activity that AI can assist, for example by proposing candidate controls from documentation and code, or by pointing out requirements without a corresponding control. People validate the catalog, as it serves as the context for all further reviews.
+  3:
+    activity: 9d0433c5133c4a4c9c16ae84abe9a235   #V-AA-3-A Verify the effectiveness of security components
+    guidance: |
+      Use AI to scrutinize the controls in the catalog in detail, including at the code level. This is where AI can go deep, but context is everything: provide the catalog of controls, the architecture representation, the security requirements, and the relevant reference architectures and shared security solutions. People verify the findings and log confirmed shortcomings as defects. The judgement on strategic alignment, scalability, and enterprise-readiness of the security solutions remains with people.

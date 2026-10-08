@@ -1,0 +1,24 @@
+---
+# ===========================================================
+# OWASP SAMM AI-Assisted Development Guidance (stream level)
+# ===========================================================
+stream: b7487370a07543cbb02ddb60c055d92f
+
+name: Architecture Mitigation
+
+overview: |
+  As for Architecture Validation, AI can be of benefit in reviewing whether the architecture mitigates threats. However AI needs proper context to do this well. AI also tends to report code-level issues as architectural problems. Teams also tend to use AI for a quick architectural mitigation as a checkbox exercise. From the second maturity level onwards, AI-assisted reviews are based on the human-readable representation of the architecture and threat models maintained by the team.
+
+levels:
+  1:
+    activity: 3ae763a70854421984dfa70980e1bf68   #V-AA-1-B Evaluate architecture for typical threats
+    guidance: |
+      AI can perform an ad-hoc review of the architecture for typical threats, based on the available architecture or design documents and the code. Review the findings and keep those that are actually architectural, rather than code-level issues.
+  2:
+    activity: 62237ae79ab84a6687de2885b1e3d608   #V-AA-2-B Structurally verify the architecture for identified threats
+    guidance: |
+      Ensure that the mitigations for the threats identified in the threat model are correctly implemented in the code. For each identified threat, use AI to check whether its mitigations are properly implemented, and whether anything remains unmitigated, for example an abuse path that bypasses the intended controls. Make sure to provide the threat model and the catalog of controls as context. People validate the results and maintain the mapping between threats and their implemented mitigations.
+  3:
+    activity: a11da5bb4d3c475d9e9c53b104032e65   #V-AA-3-B Feed review results back to improve reference architectures
+    guidance: |
+      Aside from helping with the reference architecture updates, AI does not seem to bring much value to this activity.
