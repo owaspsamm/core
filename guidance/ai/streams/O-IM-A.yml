@@ -1,0 +1,26 @@
+---
+# ===========================================================
+# OWASP SAMM AI-Assisted Development Guidance (stream level)
+# ===========================================================
+stream: ff8a6a08dc684f38ab74b9db9584f0a5
+
+name: Incident Detection
+
+overview: |
+  In many organizations, the link between product teams and operations teams is weak, and operations teams look for generic attack patterns. AI offers a major opportunity to bridge this gap. You can leverage AI to derive application-specific attack patterns from the source code, help analyze logs for suspicious events, and help determine whether suspicious activity is an incident or legitimate behavior. However, log data may contain personal and other sensitive information. Giving AI access to it must comply with the organization's data protection policies and the AI-related data risks identified in its policies.
+
+levels:
+  1:
+    activity: b8dfd23d66224ac88d3ce41cf83ed15e   #O-IM-1-A Use best-effort incident detection
+    guidance: |
+      Use AI to help analyze available log data for anything suspicious, and to help determine whether suspicious activity is legitimate or a possible security incident. Only use approved AI tools that are allowed to process the data contained in the logs. Use personal data masking if possible.
+  2:
+    activity: 5bcb52375a0f4085bb12266c9ecfa84d   #O-IM-2-A Define an incident detection process
+    guidance: |
+      Use AI to help create the checklist of expected attack vectors and known kill chains. Make the checklist application-specific by having AI derive possible attack patterns from the application's source code, for example which functionality is security-sensitive, and what its abuse would look like in the logs. This does not replace involving the product teams: they vet the AI-generated attack patterns before these are added to the checklist.
+
+      Use AI to help triage potential incidents. People decide on the escalation.
+  3:
+    activity: 11dd0c95f8914b6cb850a27f0557a9dd   #O-IM-3-A Improve the incident detection process
+    guidance: |
+      Use AI to keep the checklist of suspicious events aligned with changes in the applications, for example by deriving new attack patterns when new functionality is released. AI can also compare the attack patterns with the log data the application actually produces, to identify missing log data needed for detection, which is then handled as a defect.

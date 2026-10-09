@@ -11,7 +11,6 @@ overview: |
 
   AI tools may ignore, misinterpret, or be manipulated into overriding them. This makes the existing practice of translating policies and standards into test scripts and run-books even more important. The organization needs ways to verify key policy requirements, independently of whether the AI followed its instructions. Ideally this verification is deterministic, for example through static analysis rules, policy-as-code checks, automated tests, or tool permission configurations, so that it produces the same result every time and cannot be talked out of a finding. Verification that itself relies on AI can complement, but not replace, deterministic checks.
 
-#Guidance per maturity level, linked to the core activities of this stream
 levels:
   1:
     activity: 6e7a618abd564df5bb784ca54893bbee   #G-PC-1-A Define policies and standards

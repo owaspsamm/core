@@ -13,7 +13,7 @@ levels:
   1:
     activity: 852c76292e8a41de92205b31cb3f4e49   #G-PC-1-B Identify compliance requirements
     guidance: |
-      Include AI regulation in the list of compliance requirements, for example the EU AI Act, including its AI literacy obligations for staff using AI systems. 
+      Include AI regulation in the list of compliance requirements, for example the EU AI Act, including its AI literacy obligations for staff using AI systems.
       Revisit existing obligations and controls in place to meet them, as AI-assisted development changes how they apply. For example, under data protection regulation such as GDPR, AI providers may become processors or sub-processors, and personal data may reach them through new channels such as prompts, code context, test data, or agents accessing environments.
   2:
     activity: 38932fe4024e4ec89646a82e0b4e651e   #G-PC-2-B Standardize policy and compliance requirements

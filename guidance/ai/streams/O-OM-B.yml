@@ -1,0 +1,24 @@
+---
+# ===========================================================
+# OWASP SAMM AI-Assisted Development Guidance (stream level)
+# ===========================================================
+stream: a0d2ec4c6daa43369c07644b8745a7bd
+
+name: System Decommissioning / Legacy Management
+
+overview: |
+  AI can help identify unused systems and the resources associated with them, and reduce the effort of migrating away from legacy versions and end-of-life dependencies. Decommissioning must also cover AI-related resources, such as AI provider credentials and agent permissions.
+
+levels:
+  1:
+    activity: 1a398709b9d3407dbf9db7eeff6e916c   #O-OM-1-B Identify unused applications
+    guidance: |
+      AI can help identify unused applications and services, for example by analyzing usage logs or references in code and configuration. People decide on decommissioning.
+  2:
+    activity: 60d7a0a61dd142d5a87009bc5b93df56   #O-OM-2-B Formalize decommissioning process
+    guidance: |
+      Use AI to help find all resources associated with a system being decommissioned, for example in infrastructure-as-code, configuration files, and access management, so that no accounts, firewall rules, secrets, or data are left behind. Include AI-related resources, such as AI provider credentials, service accounts and permissions of AI agents, and integrations such as MCP servers.
+  3:
+    activity: 8ab46d242edd413d99a6c1991aef2416   #O-OM-3-B Review application lifecycle state regularly
+    guidance: |
+      For applications with AI functionality, include the models and AI services they rely on in the lifecycle review, as AI providers deprecate models and change their services on short schedules. AI can help gather the support status and end-of-life information of software assets and components across the portfolio, which people verify.

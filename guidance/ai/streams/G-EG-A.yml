@@ -26,7 +26,7 @@ levels:
       Customize training for each role with AI-specific content, including demonstrations of the AI tooling, configurations, and guardrails developed in-house:
       * Developers train on directing AI tools towards the organization's established architectural patterns, shared security services, and reference components. They are also trained on recognizing AI-generated changes that reinvent the reference patterns and components or dilute the architecture (e.g., unnecessary abstractions, overly complex solutions).
       * Security Champions train on building and tuning deterministic guardrails for AI-generated code, such as custom static analysis rules, architectural boundary checks, and pipeline gates, to catch anti-patterns as early as possible before they reach code review.
-      
+
       Keep fundamental secure development skills in the curriculum, as people can only review AI output effectively if they understand what secure code looks like.
   3:
     activity: a061ed8a5b1c4899bc95d9b1a10a469d   #G-EG-3-A Standardize security guidance

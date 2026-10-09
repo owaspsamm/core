@@ -1,0 +1,29 @@
+---
+# ===========================================================
+# OWASP SAMM AI-Assisted Development Guidance (stream level)
+# ===========================================================
+stream: 9c6bf45a97ae4149a44c4a5d97ea6a40
+
+name: Data Protection
+
+overview: |
+  AI introduces major risks to data protection. Every AI tool is a potential channel through which data leaves the organization: through prompts, through the context AI tools read, through agents accessing files, databases, and environments, and through unapproved AI tools used outside the organization's control (shadow AI). Data stored locally on a single person's machine can propagate to an AI provider without anyone noticing. This calls for a much stricter approach to data governance.
+
+  At the same time, AI can help create and maintain the data catalog and build the deterministic and automated controls that enforce the data protection policy.
+
+levels:
+  1:
+    activity: c16a12399dc94cc889d7e9e66e0ae2a0   #O-OM-1-A Organize basic data protections
+    guidance: |
+      Include AI tools and providers in the understanding of where data ends up, in the same way as sharing with external partners. Do not share sensitive data with AI tools unless they are explicitly approved for it. Revisit any possible paths that production data can make it outside the production environment (such as database exports, logs, or test data in lower environments and on developers' machines) as AI tools working there can access them directly.
+  2:
+    activity: 82a962e3dcc44b1086760de517aaa3c1   #O-OM-2-A Establish a data catalog
+    guidance: |
+      Use AI to help create and maintain the data catalog, for example by identifying data elements from database schemas, code, and data flows, and proposing their type and sensitivity classification. Avoid giving actual data to AI, use schemas and metadata instead. People validate the classification.
+
+      Record in the data catalog which data may be processed by which approved AI tools and providers, and include rules for AI use in the data protection policy (see Policy and Standards). Use AI to help create deterministic checks for data retention, so that retention requirements are enforced automatically.
+  3:
+    activity: cd80066899014962a37af7ab34c83003   #O-OM-3-A Respond to data breaches
+    guidance: |
+      Extend the technical controls enforcing the data protection policy to AI channels, for example by monitoring data sent to AI providers and detecting the use of unapproved AI tools.
+      Use AI to help create scripts for automated mechanisms, for example to audit backups and record deletions, or to review the data catalog against the data protection policy. People review the outcome and decide on updates.

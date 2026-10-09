@@ -7,7 +7,7 @@ stream: efb5d1f275504173899da345ef5bbe8e
 name: Control Verification
 
 overview: |
-  Control verification is where AI can help substantially, as it makes writing and running security tests much cheaper. The maturity levels differ in rigour: AI is used ad hoc at the first level, systematically at the second, and at the third level as many security requirements as possible are translated into automated test cases. People remain responsible for defining what needs to be tested, and for checking that AI-generated tests verify the intended behavior rather than the implementation!
+  Control verification is where AI can help substantially, as it makes writing and running security tests much cheaper. The maturity levels differ in rigour: AI is used ad hoc at the first level, systematically at the second, and at the third level as many security requirements as possible are translated into automated test cases. People remain responsible for defining what needs to be tested, and for checking that AI-generated tests verify the intended behavior rather than the implementation.
 
 levels:
   1:

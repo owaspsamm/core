@@ -7,7 +7,7 @@ stream: 77ca4b5e7ebc42558109829dffc2b80d
 name: Architecture Validation
 
 overview: |
-  Architecture assessment is where AI can be of substantial benefit. As systems evolve the dev team may start losing track of the entire scope of the project. AI can help create the complete picture in view. However AI needs proper context to do this well. AI also tends to report code-level issues as architectural problems. Teams also tend to use AI for a quick architectural analysis as a checkbox exercise. This may be acceptable at the first maturity level, but higher levels require teams to maintain a human-readable representation of the architecture: its components, their interactions, and the security controls. This representation is maintained by and for people, not for the sake of AI, and serves as the basis for AI-assisted reviews.
+  Architecture assessment is where AI can be of substantial benefit. As systems evolve the dev team may start losing track of the entire scope of the project. AI can help keep the complete picture in view. However AI needs proper context to do this well. AI also tends to report code-level issues as architectural problems. Teams also tend to use AI for a quick architectural analysis as a checkbox exercise. This may be acceptable at the first maturity level, but higher levels require teams to maintain a human-readable representation of the architecture: its components, their interactions, and the security controls. This representation is maintained by and for people, not for the sake of AI, and serves as the basis for AI-assisted reviews.
 
 levels:
   1:

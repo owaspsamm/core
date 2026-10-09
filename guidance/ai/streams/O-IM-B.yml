@@ -1,0 +1,27 @@
+---
+# ===========================================================
+# OWASP SAMM AI-Assisted Development Guidance (stream level)
+# ===========================================================
+stream: 390bec725b8344a289d5386026925947
+
+name: Incident Response
+
+overview: |
+  AI can support incident responders, most notably in root cause analysis, and also in reconstructing timelines, documenting the response, and preparing playbooks and exercises. Decisions and response actions remain with people.
+  AI-assisted development introduces new types of incidents the organization must be prepared to respond to, such as secrets exposed to an AI provider or an AI agent performing unintended actions.
+
+levels:
+  1:
+    activity: b082664b8815407d825b82cf23fa88ea   #O-IM-1-B Create an incident response plan
+    guidance: |
+      AI can help document the actions taken during an incident and reconstruct the timeline of events. Only share incident data with approved AI tools that are allowed to process it.
+  2:
+    activity: d6dd8813c5074350b5614b92f2dec60d   #O-IM-2-B Define an incident response process
+    guidance: |
+      Include incident scenarios related to AI-assisted development in the response process, for example secrets or sensitive data exposed to an AI provider, a compromised AI tool, plugin, or MCP server, an AI agent performing unintended or destructive actions, or prompt injection steering an AI tool. Define how to respond to them, for example how to quickly revoke the access and credentials of AI tools, using the inventory of AI tools and their permissions.
+
+      Use AI to support root cause analysis, for example by correlating log data and code changes to identify how an incident could happen. Make sure AI cannot modify any of the original evidence related to the incident. People verify the root cause before acting on it.
+  3:
+    activity: f692ee8f87c1499681490cc1647c0df4   #O-IM-3-B Establish an incident response team
+    guidance: |
+      Use AI to generate realistic, application-specific scenarios for incident and emergency exercises, including scenarios related to AI-assisted development. AI can help automate response procedures, but do not let AI tools autonomously execute response actions, such as containment, in production environments.

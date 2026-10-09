@@ -7,7 +7,7 @@ stream: b7487370a07543cbb02ddb60c055d92f
 name: Architecture Mitigation
 
 overview: |
-  As for Architecture Validation, AI can be of benefit in reviewing whether the architecture mitigates threats. However AI needs proper context to do this well. AI also tends to report code-level issues as architectural problems. Teams also tend to use AI for a quick architectural mitigation as a checkbox exercise. From the second maturity level onwards, AI-assisted reviews are based on the human-readable representation of the architecture and threat models maintained by the team.
+  As for Architecture Validation, AI can be of benefit in reviewing whether the architecture mitigates threats. However AI needs proper context to do this well. AI also tends to report code-level issues as architectural problems. Teams also tend to use AI for a quick architectural mitigation review as a checkbox exercise. From the second maturity level onwards, AI-assisted reviews are based on the human-readable representation of the architecture and threat models maintained by the team.
 
 levels:
   1:

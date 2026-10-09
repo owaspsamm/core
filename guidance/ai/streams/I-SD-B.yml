@@ -17,7 +17,7 @@ levels:
   2:
     activity: 4729b4bd6dca4d58a68cb854ad4409a6   #I-SD-2-B Include application secrets during deployment
     guidance: |
-      Use AI to complement static secret detection tools. Such tools may lack context and produce false positives. AI tools that have access to the codebase may provide a more precise guidance and whether it is sensitive. This is even more important for the local secrets detection as developers may keep production-grade secrets on their machines that are not checked-in into the repository. If AI tools are already running on such a machine, AI already has access to them. So use AI to find such secrets and raise the alarm. Treat every production secret found this way as compromised, and rotate it.
+      Use AI to complement static secret detection tools. Such tools may lack context and produce false positives. AI tools that have access to the codebase can better judge whether a value is an actual secret and whether it is sensitive. This is even more important for the local secrets detection as developers may keep production-grade secrets on their machines that are not checked-in into the repository. If AI tools are already running on such a machine, AI already has access to them. So use AI to find such secrets and raise the alarm. Treat every production secret found this way as compromised, and rotate it.
   3:
     activity: fed0d75c064c4a979a5b7b98adfdedbf   #I-SD-3-B Enforce lifecycle management of application secrets
     guidance: |

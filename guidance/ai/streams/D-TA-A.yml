@@ -13,7 +13,7 @@ levels:
   1:
     activity: c6da6525773644d0a18b3a927caf6dd2   #D-TA-1-A Perform application risk assessments
     guidance: |
-      The basic risk assessment should explicitly take into account whether the application contains AI functionality, such as an LLM integration or an MCP server. Include in the risk profile the potential attack surface that this functionality may create. For instance, a read-only MCP server opens a much smaller attack surface than a full blown LLM integration with a write access.
+      The basic risk assessment should explicitly take into account whether the application contains AI functionality, such as an LLM integration or an MCP server. Include in the risk profile the potential attack surface that this functionality may create. For instance, a read-only MCP server opens a much smaller attack surface than a full-blown LLM integration with write access.
   2:
     activity: 529d528265c94447954a57f5be425f54   #D-TA-2-A Inventory risk profiles
     guidance: |

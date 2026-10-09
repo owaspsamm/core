@@ -1,0 +1,27 @@
+---
+# ===========================================================
+# OWASP SAMM AI-Assisted Development Guidance (stream level)
+# ===========================================================
+stream: 47bff9a57f0344eeb4b083f1c2b1bb7e
+
+name: Configuration Hardening
+
+overview: |
+  AI can help create hardening baselines, verify that configurations conform to them, and translate them into deterministic guardrails. At the same time, configuration itself is increasingly written by AI, for example infrastructure-as-code, container definitions, and deployment manifests, which makes enforcing the baselines automatically all the more important. Baselines remain owned by people.
+
+levels:
+  1:
+    activity: 786b3d7b39cd49a88090554a275f04a6   #O-EM-1-A Use best-effort hardening
+    guidance: |
+      Use AI to help apply secure configurations to the elements of the technology stack. Verify AI suggestions against current vendor documentation or established benchmarks, as AI may propose outdated or insecure settings.
+      For applications with AI functionality, include its components in the stack to be hardened, such as model servers, AI gateways, and MCP servers.
+  2:
+    activity: 84dcbc954d954d95b1fb37e032f05402   #O-EM-2-A Establish hardening baselines
+    guidance: |
+      Use AI to help create hardening baselines and configuration guides for the components in each technology stack. Each baseline has an owner who is responsible for it; an AI tool cannot be the owner of a baseline. Make the baselines available in an AI-consumable format, so that AI tools generating configuration apply them (see Policy and Standards).
+
+      Use AI to help translate the baselines into deterministic guardrails, for example by creating or tuning the configuration of infrastructure-as-code scanners, static and dynamic analysis tools, or policy-as-code rules, so that configurations are checked against the baselines automatically.
+  3:
+    activity: 3156ab7b516e4550893427face9f86bc   #O-EM-3-A Perform continuous configuration monitoring
+    guidance: |
+      Use AI to help verify that deployed configurations conform to the baselines, complementing the deterministic checks, for example for components or settings the checks do not cover. AI can also help the baseline owners keep the baselines up to date, for example by identifying changes in vendor guidance or new component versions that affect them.

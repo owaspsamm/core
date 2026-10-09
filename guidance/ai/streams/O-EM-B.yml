@@ -1,0 +1,24 @@
+---
+# ===========================================================
+# OWASP SAMM AI-Assisted Development Guidance (stream level)
+# ===========================================================
+stream: 1a7ad26d9e48411e95a63be79e1b90ea
+
+name: Patching and Updating
+
+overview: |
+  The inventory of technology stack components and their versions, such as operating systems and their packages, runtimes, application servers, container base images, and frameworks, should be based on deterministic tools, such as host and package inventory tools, container image scanners, and cloud asset inventories. AI can complement them by filling gaps, by assessing whether a vulnerability is actually relevant to the application, and by reducing the effort of upgrading components, which makes timely patching more feasible.
+
+levels:
+  1:
+    activity: 0721d5bd5d67479991b5b52f33dcd7b1   #O-EM-1-B Practice best-effort patching
+    guidance: |
+      Use deterministic tools to determine the versions of components in use. AI can help identify components these tools miss, such as manually installed binaries or components referenced only in configuration. When notified of a vulnerability, AI can help assess whether the application is actually affected, for example whether it uses the vulnerable functionality.
+  2:
+    activity: b7f1d18fbe724a148f039ce036de98ef   #O-EM-2-B Formalize patch management
+    guidance: |
+      Use AI to reduce the effort of applying updates, for example by adapting the code to breaking changes in new component versions, so that regular releases including patches remain feasible. Such changes go through the same review and verification as any other change.
+  3:
+    activity: a573c126b3e345fba9d1d94c8158cf60   #O-EM-3-B Enforce timely patch management
+    guidance: |
+      Feed AI with external threat intelligence sources, such as security advisories, mailing lists, and researcher publications, and let it help determine how the reported vulnerabilities may affect the organization's applications and components. People verify the results before acting on them.

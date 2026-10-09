@@ -21,6 +21,6 @@ levels:
   3:
     activity: 281369f491da4d4c84b0729e344e2c93   #I-SB-3-A Enforce a security baseline during build
     guidance: |
-      Add the deterministic guardrails for AI-generated code (e.g., custom static analysis rules, architectural rules, code quality metrics) to the automated security checks in the pipeline. 
-      
+      Add the deterministic guardrails for AI-generated code (e.g., custom static analysis rules, architectural rules, code quality metrics) to the automated security checks in the pipeline.
+
       If the pipeline includes AI-based steps, such as automated AI code review, treat them as processing untrusted input, since pull requests may contain prompt injection. Run such steps without access to secrets or write permissions.

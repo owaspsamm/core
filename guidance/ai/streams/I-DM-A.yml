@@ -7,15 +7,15 @@ stream: a5b57fc5fa0441b7b23f599b506c5752
 name: Defect Tracking
 
 overview: |
-  With AI-assisted development, defect management must make it possible to find out where and why AI tools got it wrong. This requires recording which defects were introduced through AI-generated changes, while keeping ownership of every defect clearly with people. AI can also assist with triaging defects and tracking SLAs.
+  With AI-assisted development, most changes are produced with AI assistance, so recording whether a defect came from AI says little. Instead, defect tracking should capture enough information to understand why a defect occurred, as input for root cause analysis (see Metrics and Feedback), while keeping ownership of every defect clearly with people. AI can also assist with triaging defects and tracking SLAs.
 
 levels:
   1:
     activity: 93dff7be5f954f8d87d24f4261002508   #I-DM-1-A Track security defects centrally
     guidance: |
-      Record for each security defect whether it was introduced through an AI-generated change, where the origin of changes is known (see Strategy and Metrics). This is the basis for analyzing where and why AI gets it wrong and allow focusing on prevention. Though given the non-deterministic nature of AI prevention might not always work.
+      Record for each security defect the information needed to later understand why it occurred, such as the related requirements, the affected components, and the context in which the change was made. This is the basis for root cause analysis and allows focusing on prevention, although, given the non-deterministic nature of AI, prevention might not always work.
 
-      Ensure every security defect has a clear owner, regardless of whether the defect was introduced through an AI-generated change. The team that accepted a change owns its defects, and an AI tool is never the owner of a defect, even when it is used to fix it.
+      Ensure every security defect has a clear owner, regardless of whether AI was involved in producing the change. The team that accepted a change owns its defects, and an AI tool is never the owner of a defect, even when it is used to fix it.
 
       AI can assist with triaging defects, for example by identifying duplicates and likely false positives. Treat its conclusions as proposals that people confirm.
   2:

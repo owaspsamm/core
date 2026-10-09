@@ -8,7 +8,7 @@ stream: 94bb47791e3d462cbf5f71ebb1a1327a
 name: Create and Promote
 
 overview: |
-  AI-assisted development changes both the risk landscape and the opportunities an application security program must address. Code, tests, configuration, and infrastructure definitions may be produced by AI assistants, autonomous coding agents, or other generators, at a volume and speed that existing processes were not designed for. The organization's strategy must be explicit about the use of AI. It should at least cover where AI is allowed to be used in the software development process. It should also specify the guardrails required for every permitted AI. Finally there should a feedback loop in place to measure which strategic AI decisions are working and which are not.
+  AI-assisted development changes both the risk landscape and the opportunities an application security program must address. Code, tests, configuration, and infrastructure definitions may be produced by AI assistants, autonomous coding agents, or other generators, at a volume and speed that existing processes were not designed for. The organization's strategy must be explicit about the use of AI. It should at least cover where AI is allowed to be used in the software development process. It should also specify the guardrails required for every permitted AI use. Finally, there should be a feedback loop in place to measure which strategic AI decisions are working and which are not.
 
 levels:
   1:
@@ -24,9 +24,9 @@ levels:
     guidance: |
       Include AI-assisted development as an explicit theme in the application security strategy and roadmap. Define the target state for the planning horizon: which AI tools and models are sanctioned, which autonomy levels are allowed for which application risk classes, and which guardrails must be in place before autonomy is extended.
 
-      For every permitted AI use, define the required guardrails (e.g., mandatory independent review, automated security checks, restricted permissions for agents, approved data flows) and how the organization verifies that they are actually applied. Define upfront which signals will show whether each strategic AI decision is working, and connect them to the metrics in the Measure and Improve stream so that the strategy has a built-in feedback loop.
+      For every permitted AI use, define the required guardrails (e.g., mandatory independent review, automated security checks, restricted permissions for agents, approved data flows) and how the organization verifies that they are actually applied. Define upfront which signals will show whether each strategic AI decision is working, for example the root cause analysis of security defects (see Metrics and Feedback).
 
-      Plan the supporting initiatives as roadmap milestones. These typically include establishing a list of approved AI tools and providers, translating security standards into a form that AI code generation tools and agent harnesses can consume (e.g., shared instruction files, rules, and policies), scaling automated security verification to keep pace with the increased volume of change, adapting training, and tracking the provenance of AI-generated artifacts.
+      Plan the supporting initiatives as roadmap milestones. These typically include establishing a list of approved AI tools and providers, translating security standards into a form that AI code generation tools and agent harnesses can consume (e.g., shared instruction files, rules, and policies), scaling automated security verification to keep pace with the increased volume of change, and adapting training.
 
       Balance the expected productivity gains against verification capacity. When the rate of change grows faster than the organization's ability to verify it, risk accumulates silently. Offer sanctioned, well-configured AI tools to development teams early in the roadmap to reduce the use of unsanctioned tools, and obtain buy-in from development teams on the guardrails.
   3:
