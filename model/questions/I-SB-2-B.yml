@@ -21,7 +21,7 @@ order: 1
 #Qualifying Criterion
 quality:
 - You keep a list of approved dependencies that meet predefined criteria
-- You automatically evaluate dependencies for new CVEs and alert responsible staff
+- You automatically evaluate dependencies for newly identified vulnerabilities and alert responsible staff
 - You automatically detect and alert to license changes with possible impact on legal application usage
 - You track and alert to usage of unmaintained dependencies
 - You reliably detect and remove unnecessary dependencies from the software
