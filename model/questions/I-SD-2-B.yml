@@ -21,7 +21,7 @@ order: 1
 #Qualifying Criterion
 quality:
 - Source code files no longer contain active application secrets
-- Under normal circumstances, no humans access secrets during deployment procedures
+- Under normal circumstances, no unauthorized actors access secrets during deployment procedures
 - You log and alert when abnormal secrets access is attempted
 
 #Type Classification of the Document
